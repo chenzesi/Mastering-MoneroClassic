@@ -8,3 +8,5 @@ XMC和XMR都遵从cryptonote协议，其他遵从cryptonote协议的币还包括
 
 第二，不可关联的交易。
 
+第三，
+
