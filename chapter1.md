@@ -4,5 +4,5 @@
 
 XMC和XMR都遵从cryptonote协议，其他遵从cryptonote协议的币还包括bytecoin, Boolberry等等。cryptonote 协议主要定义了一下特性：
 
-第一，不可追溯的支付方式。cryptonote协议，使用环签名
+第一，不可追溯的支付方式。一般比特币的模型或者协议中，每个交易（transaction or tx）cryptonote协议，使用环签名来实现
 
