@@ -32,9 +32,7 @@ Ubuntu系统的编译,以ubuntu 16.04为例:
 
 6.编译生成可执行文件: make \(此处可以使用-j参数以增加编译速度，-j表示用来编译的核心数，例如make -j4表示使用四个CPU核心进行编译\)
 
-OSX和Ubuntu系统编译成功后，都会生成五个可执行文件，分别是:
-
-moneroclassic-blockchain-export，moneroclassic-blockchain-import，moneroclassic-wallet-cli，
+OSX和Ubuntu系统编译成功后，都会生成五个可执行文件，分别是: moneroclassic-blockchain-export，moneroclassic-blockchain-import，moneroclassic-wallet-cli，moneroclassic-wallet-rpc 和
 
 Window系统的编译:
 
