@@ -58,5 +58,7 @@ windows系统的编译
 
 ## GUI钱包的使用:
 
+![](/assets/import.png)
+
 
 
