@@ -52,5 +52,7 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 编译完成后，会在monero-gui/build/release/bin/monero-wallet-gui.app/Contents/MacOS路径下生成可执行文件monero-wallet-gui和monerod
 
+ubuntu系统的编译，以ubuntu16.04为例:
 
+windows系统的编译
 
