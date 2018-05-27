@@ -22,7 +22,11 @@ XMC和XMR都遵从cryptonote协议，其他遵从cryptonote协议的币还包括
 
 参考资料:
 
-https://cryptonote.org/
+[https://cryptonote.org/](https://cryptonote.org/)
+
+https://github.com/monero-classic/monero
+
+https://github.com/monero-project/monero
 
 
 
