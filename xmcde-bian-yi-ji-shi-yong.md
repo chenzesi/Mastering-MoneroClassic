@@ -40,5 +40,7 @@ Window系统的编译:
 
 OSX系统的编译, 以OSX 10.13.4为例:
 
-1.下载并安装qt5, 现在链接为: https://download.qt.io/archive/qt/5.10/5.10.1/
+1.下载并安装qt5, 现在链接为: [https://download.qt.io/archive/qt/5.10/5.10.1/](https://download.qt.io/archive/qt/5.10/5.10.1/)
+
+2.配置qt5的路径，
 
