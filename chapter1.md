@@ -20,9 +20,9 @@ XMC和XMR都遵从cryptonote协议，其他遵从cryptonote协议的币还包括
 
 第八，平等的POW工作量证明（Egalitarian proof of work）。
 
-
-
 参考资料:
+
+https://cryptonote.org/
 
 
 
