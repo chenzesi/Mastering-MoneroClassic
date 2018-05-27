@@ -22,3 +22,5 @@ Ubuntu系统的编译:
 
 2.开打monero文件夹: cd monero
 
+3.
+
