@@ -14,5 +14,5 @@ OSX系统的编译:
 
 5.使用cmake生成makfile等文件: cmake ..
 
-6.
+6.编译生成可执行文件: make
 
