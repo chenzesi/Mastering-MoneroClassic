@@ -26,5 +26,7 @@ Ubuntu系统的编译:
 
 4.打开build文件夹: cd build
 
-5.使用cmake生成
+5.使用cmake生成makefile等文件: cmake ..
+
+6.编译生成可执行文件:make
 
