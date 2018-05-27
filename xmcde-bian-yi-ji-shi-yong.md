@@ -22,5 +22,7 @@ Ubuntu系统的编译:
 
 2.开打monero文件夹: cd monero
 
-3.
+3.创建build文件夹:mkdir build
+
+4.
 
