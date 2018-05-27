@@ -56,5 +56,7 @@ ubuntu系统的编译，以ubuntu16.04为例:
 
 windows系统的编译
 
-GUI钱包的使用:
+## GUI钱包的使用:
+
+
 
