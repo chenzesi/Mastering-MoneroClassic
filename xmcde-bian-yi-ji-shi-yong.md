@@ -34,6 +34,8 @@ Ubuntu系统的编译,以ubuntu 16.04为例:
 
 OSX和Ubuntu系统编译成功后，都会生成五个可执行文件，分别是:
 
+
+
 Window系统的编译:
 
 ## XMC GUI钱包的编译:
