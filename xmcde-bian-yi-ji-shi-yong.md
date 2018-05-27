@@ -44,7 +44,7 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 2.配置qt5的路径，讲**export PATH=$PATH:$HOME/Qt5.10.1/5.10.1/clang64/bin**_ _添加到**.bash\_profile**的末尾
 
-3.下载GUI钱包源代码，网页链接为:https://github.com/monero-classic/monero-gui
+3.下载GUI钱包源代码，网页链接为:[https://github.com/monero-classic/monero-gui](https://github.com/monero-classic/monero-gui)
 
-4.
+4.打开monero-gui文件夹: cd monero-gui
 
