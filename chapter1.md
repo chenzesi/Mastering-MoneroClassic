@@ -22,3 +22,7 @@ XMC和XMR都遵从cryptonote协议，其他遵从cryptonote协议的币还包括
 
 
 
+参考资料:
+
+
+
