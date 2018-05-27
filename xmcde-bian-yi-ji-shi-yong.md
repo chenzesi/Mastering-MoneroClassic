@@ -18,5 +18,5 @@ OSX系统的编译:
 
 Ubuntu系统的编译:
 
-1.安装依赖库:
+1.安装依赖库: sudo apt install 
 
