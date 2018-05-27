@@ -48,5 +48,5 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 4.打开monero-gui文件夹: cd monero-gui
 
-5.
+5.运行./build.sh编译
 
