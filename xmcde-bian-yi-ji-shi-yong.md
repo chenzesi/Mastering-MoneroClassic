@@ -16,7 +16,7 @@ OSX系统的编译:
 
 6.编译生成可执行文件: make \(此处可以使用-j参数以增加编译速度，-j表示用来编译的核心数，例如make -j4表示使用四个CPU核心进行编译\)
 
-Ubuntu系统的编译:
+Ubuntu系统的编译,以ubuntu 16.04为例:
 
 1.安装依赖库: sudo apt install libssl-dev libboost-all-dev cmake
 
@@ -31,6 +31,4 @@ Ubuntu系统的编译:
 6.编译生成可执行文件: make \(此处可以使用-j参数以增加编译速度，-j表示用来编译的核心数，例如make -j4表示使用四个CPU核心进行编译\)
 
 Window系统的编译:
-
-
 
