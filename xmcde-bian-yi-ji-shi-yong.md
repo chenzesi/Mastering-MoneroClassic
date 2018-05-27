@@ -50,3 +50,7 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 5.运行**./build.sh**编译
 
+编译完成后，会在monero-gui/build/release/bin/monero-wallet-gui.app/Contents/MacOS路径下生成可执行文件monero-wallet-gui和monerod
+
+
+
