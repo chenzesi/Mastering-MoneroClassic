@@ -10,5 +10,7 @@ OSX系统的编译:
 
 3.创建build文件夹: mkdir build
 
-4.
+4.打开build文件夹: cd build
+
+5.使用cmake
 
