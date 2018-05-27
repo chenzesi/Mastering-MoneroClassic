@@ -6,7 +6,7 @@ OSX系统的编译:
 
 1.安装cmake: brew install cmake
 
-2.打开monero文件: cd monero
+2.打开monero文件夹: cd monero
 
 3.创建build文件夹: mkdir build
 
@@ -20,5 +20,5 @@ Ubuntu系统的编译:
 
 1.安装依赖库: sudo apt install libssl-dev libboost-all-dev
 
-2.开打monero文件夹
+2.开打monero文件夹: cd monero
 
