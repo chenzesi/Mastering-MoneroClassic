@@ -12,5 +12,7 @@ OSX系统的编译:
 
 4.打开build文件夹: cd build
 
-5.使用cmake
+5.使用cmake生成makfile等文件: cmake ..
+
+6.
 
