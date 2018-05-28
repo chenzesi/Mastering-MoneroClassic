@@ -58,5 +58,5 @@ windows系统的编译
 
 ## GUI钱包的使用:
 
-![](/assets/gui-wallet1.png)
+![](/assets/gui-wallet1.png)![](/assets/gui-wallet2.png)
 
