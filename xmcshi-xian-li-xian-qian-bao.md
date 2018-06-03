@@ -8,5 +8,5 @@
 
 XMC编译完成后，会有moneroclassic-blockchain-export , moneroclassic-wallet-cli , moneroclassicd , moneroclassic-blockchain-import 和 moneroclassic-wallet-rpc 五个可执行文件。
 
-OnlineB电脑需要同步一份XMC的区块数据
+OnlineB电脑需要使用moneroclassicd同步一份XMC的区块数据
 
