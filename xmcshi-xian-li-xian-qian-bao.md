@@ -6,7 +6,7 @@
 
 对于接收XMC来说，离线钱包和在线钱包没有任何区别，只需要将公钥提供给付款者即可。
 
-XMC编译完成后，会有
+XMC编译完成后，会有moneroclassic-blockchain-export , moneroclassic-wallet-cli , moneroclassicd , moneroclassic-blockchain-import 和 moneroclassic-wallet-rpc 五个可执行文件。
 
 OnlineB电脑需要同步一份XMC的区块数据
 
