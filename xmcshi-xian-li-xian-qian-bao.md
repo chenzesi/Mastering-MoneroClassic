@@ -10,7 +10,25 @@
 
 **./moneroclassic-wallet-cli --testnet** 创建新钱包
 
-用address命令显示address
+用**address**命令显示address，用**viewkey**命令显示viewkey
+
+
+
+\[wallet 9zRXgy \(no daemon\)\]: address
+
+9zRXgyzpnd1VaM483dien6R2iGTQKPYwJMw8kinEQHGtBU3D7bAJxHKYjCuXRmoBA8ezNpZfYS7rzBtK5jf1TmFGKpuGaHW
+
+\[wallet 9zRXgy \(no daemon\)\]: viewkey
+
+Wallet password: \*\*\*\*\*\*\*\*
+
+secret: 1912b4c4daede5b1297d2627f3a695983c64339d84fbe0395946b0180a44d60e
+
+public: 92baf287a01366bdaff89d3ef526e9e31f737be86adb43411345af3c429bbba6
+
+
+
+
 
 对于接收XMC来说，离线钱包和在线钱包没有任何区别，只需要将公钥提供给付款者即可。
 
