@@ -8,9 +8,9 @@
 
 2.OffineA包含spend key和view key的钱包（**moneroclassic-wallet-cli**）。
 
-./moneroclassic-wallet-cli --testnet 创建新钱包
+**./moneroclassic-wallet-cli --testnet** 创建新钱包
 
-
+用address命令显示address
 
 对于接收XMC来说，离线钱包和在线钱包没有任何区别，只需要将公钥提供给付款者即可。
 
