@@ -48,7 +48,7 @@
 
 5.讲未签名的交易文件unsigned\_monero\_tx复制到OffinleA电脑中冷钱包的工作目录（使用非联网的方式）
 
-6.在OfflineA电脑中的冷钱包中，使用sign\_transfer对没签名的交易签名:
+6.在OfflineA电脑中的冷钱包中，使用sign\_transfer对没签名的交易签名，签名后产生文件signed\_monero\_tx:
 
 `[wallet 9xALWu]: sign_transfer`
 
@@ -57,4 +57,6 @@
 `Loaded 1 transactions, for 203.695646668577, fee 0.028004000000, sending 200.000000000000 to 9wd28TGpRBP3vB4Zc8Zgrpfjyp9hjtAHHBoMvCa8KnVZ1ofqAJE5iFYaBvWsnj8QFERJU3DVXrWNwVADMacUwCwCATyLEp8, 3.667642668577 change to 9xALWudHXg4LWRtCzrJv2UVsAGbQ2hNdCRyxTa9cWVySZqyDg2PqjxTeM1vZeKDtdGS1EY5et9sgycyg69A1ToaZB6LQiqi, with min ring size 5, no payment ID. 287 outputs to import. Is this okay? (Y/Yes/N/No): Y`
 
 `Transaction successfully signed to file signed_monero_tx, txid cd9679f4c528f140276e9777fa31193da76abdc143f4bbfa06bc0387eec1f028`
+
+7.
 
