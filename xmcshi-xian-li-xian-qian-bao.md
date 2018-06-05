@@ -6,7 +6,7 @@
 
 OnlineB包括view only钱包，完整的区块同步的节点。
 
-OffineA
+OffineA包含spend key和view key的钱包。
 
 对于接收XMC来说，离线钱包和在线钱包没有任何区别，只需要将公钥提供给付款者即可。
 
