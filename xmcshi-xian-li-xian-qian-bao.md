@@ -30,7 +30,7 @@
 
 2.在OnlineB电脑上使用./**moneroclassicd --testnet **命令同步一份XMC的区块数据。
 
-3.在OnlineB电脑上使用**./moneroclassic-wallet-cli --testnet --generate-from-view-key 45d7ca2be264d65b278f3ac30d2f2f804ae9e60bd716c3ca83561adab79c5405 **命令创建只读钱包。输入命令后，会提示填写Standard address和viewkey, 填上文中对应的address和viewkey即可。
+3.在OnlineB电脑上使用**./moneroclassic-wallet-cli --testnet --generate-from-view-key viewonlywallet **命令创建只读钱包。输入命令后，会提示填写Standard address和viewkey, 填上文中对应的address和viewkey即可。
 
 4.使用**transfer**命令在只读钱包钱包产生未签名的transaction，结果会被写到unsigned\_monero\_tx
 
