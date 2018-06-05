@@ -32,5 +32,5 @@
 
 3.在OnlineB电脑上使用**./moneroclassic-wallet-cli --testnet --generate-from-view-key 45d7ca2be264d65b278f3ac30d2f2f804ae9e60bd716c3ca83561adab79c5405 **命令创建只读钱包。输入命令后，会提示填写Standard address和viewkey, 填上文中对应的address和viewkey即可。
 
-4.
+4.从OnlineB电脑中使用**export\_outputs**命令导出
 
