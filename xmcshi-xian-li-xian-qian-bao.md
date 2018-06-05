@@ -58,7 +58,7 @@
 
 `Transaction successfully signed to file signed_monero_tx, txid cd9679f4c528f140276e9777fa31193da76abdc143f4bbfa06bc0387eec1f028`
 
-7.将OflfineA电脑中的签名后的文件signed_\__monero\_tx再复制回OnlineB电脑中的只读钱包的工作目录（使用非联网的方式）
+7.将OflfineA电脑中的签名后的文件signed\_monero\_tx再复制回OnlineB电脑中的只读钱包的工作目录（使用非联网的方式）
 
 8.
 
