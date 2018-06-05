@@ -60,5 +60,5 @@
 
 7.将OflfineA电脑中的签名后的文件signed\_monero\_tx再复制回OnlineB电脑中的只读钱包的工作目录（使用非联网的方式）
 
-8.
+8.在只读钱包，使用**submit\_transfer**命令，提交transaction到网络中
 
