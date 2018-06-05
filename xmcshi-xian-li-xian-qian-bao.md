@@ -42,3 +42,17 @@
 
 5.将文件coldwallet文件从OnlineB电脑复制到OflineA电脑中。（此处可以用U盘copy等不联网的方式）
 
+6.使用view only钱包产生未签名的transaction
+
+`[wallet 9xALWu]: transfer 9wd28TGpRBP3vB4Zc8Zgrpfjyp9hjtAHHBoMvCa8KnVZ1ofqAJE5iFYaBvWsnj8QFERJU3DVXrWNwVADMacUwCwCATyLEp8 200`
+
+`Wallet password: ********`
+
+`No payment id is included with this transaction. Is this okay?  (Y/Yes/N/No): Y`
+
+`Sending 200.000000000000.  The transaction fee is 0.028004000000`
+
+`Is this okay?  (Y/Yes/N/No): Y`
+
+`Unsigned transaction(s) successfully written to file: unsigned_monero_tx`
+
