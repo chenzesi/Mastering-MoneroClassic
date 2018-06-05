@@ -40,3 +40,5 @@
 
 `Outputs exported to coldwallet`
 
+5.将文件coldwallet文件从OnlineB电脑复制到OflineA电脑中。
+
