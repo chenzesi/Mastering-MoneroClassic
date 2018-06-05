@@ -12,23 +12,17 @@
 
 用**address**命令显示address，用**viewkey**命令显示viewkey
 
+`[wallet 9zRXgy (no daemon)]: address`
 
+`9xALWudHXg4LWRtCzrJv2UVsAGbQ2hNdCRyxTa9cWVySZqyDg2PqjxTeM1vZeKDtdGS1EY5et9sgycyg69A1ToaZB6LQiqi`
 
-\[wallet 9zRXgy \(no daemon\)\]: address
+`[wallet 9zRXgy (no daemon)]: viewkey`
 
-9zRXgyzpnd1VaM483dien6R2iGTQKPYwJMw8kinEQHGtBU3D7bAJxHKYjCuXRmoBA8ezNpZfYS7rzBtK5jf1TmFGKpuGaHW
+`Wallet password: ********`
 
-\[wallet 9zRXgy \(no daemon\)\]: viewkey
+`secret: 45d7ca2be264d65b278f3ac30d2f2f804ae9e60bd716c3ca83561adab79c5405`
 
-Wallet password: \*\*\*\*\*\*\*\*
-
-secret: 1912b4c4daede5b1297d2627f3a695983c64339d84fbe0395946b0180a44d60e
-
-public: 92baf287a01366bdaff89d3ef526e9e31f737be86adb43411345af3c429bbba6
-
-
-
-
+`public: 5cfc7f99e19ab8df4593341f299c03957d422693c61526d717df1916d5d84259`
 
 对于接收XMC来说，离线钱包和在线钱包没有任何区别，只需要将公钥提供给付款者即可。
 
