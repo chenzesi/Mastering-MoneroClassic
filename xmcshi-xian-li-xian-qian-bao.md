@@ -42,7 +42,7 @@
 
 5.将文件coldwallet文件从OnlineB电脑复制到OflineA电脑中。（此处可以用U盘copy等不联网的方式）
 
-6.使用view only钱包产生未签名的transaction
+6.使用**transfer**命令view only钱包产生未签名的transaction，结果会被写到unsigned\_monero_\__tx
 
 `[wallet 9xALWu]: transfer 9wd28TGpRBP3vB4Zc8Zgrpfjyp9hjtAHHBoMvCa8KnVZ1ofqAJE5iFYaBvWsnj8QFERJU3DVXrWNwVADMacUwCwCATyLEp8 200`
 
