@@ -12,3 +12,5 @@
 
 OnlineB电脑需要使用**moneroclassicd **同步一份XMC的区块数据，同步完数据后，使用
 
+./monero-wallet-cli --generate-from-view-key 
+
