@@ -8,9 +8,7 @@
 
 2.OffineA包含spend key和view key的钱包（**moneroclassic-wallet-cli**）。
 
-./moneroclassic-wallet-cli --testnet
-
-
+./moneroclassic-wallet-cli --testnet 创建新钱包
 
 
 
