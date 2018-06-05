@@ -12,7 +12,7 @@
 
 对于使用XMC离线钱包支付的情形:
 
-**./moneroclassic-wallet-cli --testnet** 创建新钱包
+1.使用**./moneroclassic-wallet-cli --testnet** 命令在OfflineA电脑上创建新钱包
 
 用**address**命令显示address，用**viewkey**命令显示viewkey
 
