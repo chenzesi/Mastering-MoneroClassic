@@ -32,17 +32,7 @@
 
 3.在OnlineB电脑上使用**./moneroclassic-wallet-cli --testnet --generate-from-view-key 45d7ca2be264d65b278f3ac30d2f2f804ae9e60bd716c3ca83561adab79c5405 **命令创建只读钱包。输入命令后，会提示填写Standard address和viewkey, 填上文中对应的address和viewkey即可。
 
-4.从OnlineB电脑中使用**export\_outputs**命令导出outputs到文件coldwallet \(文件名可以随意\)
-
-`[wallet 9xALWu]: export_outputs coldwallet`
-
-`Wallet password: ********`
-
-`Outputs exported to coldwallet`
-
-5.将文件coldwallet文件从OnlineB电脑复制到OflineA电脑中。（此处可以用U盘copy等不联网的方式）
-
-6.使用**transfer**命令view only钱包产生未签名的transaction，结果会被写到unsigned\_monero_\__tx
+4.使用**transfer**命令在只读钱包钱包产生未签名的transaction，结果会被写到unsigned\_monero\_tx
 
 `[wallet 9xALWu]: transfer 9wd28TGpRBP3vB4Zc8Zgrpfjyp9hjtAHHBoMvCa8KnVZ1ofqAJE5iFYaBvWsnj8QFERJU3DVXrWNwVADMacUwCwCATyLEp8 200`
 
@@ -55,4 +45,14 @@
 `Is this okay?  (Y/Yes/N/No): Y`
 
 `Unsigned transaction(s) successfully written to file: unsigned_monero_tx`
+
+5.使用sign\_transfer对没签名的交易签名:
+
+`[wallet 9xALWu]: sign_transfer`
+
+`Wallet password: ********`
+
+`Loaded 1 transactions, for 203.695646668577, fee 0.028004000000, sending 200.000000000000 to 9wd28TGpRBP3vB4Zc8Zgrpfjyp9hjtAHHBoMvCa8KnVZ1ofqAJE5iFYaBvWsnj8QFERJU3DVXrWNwVADMacUwCwCATyLEp8, 3.667642668577 change to 9xALWudHXg4LWRtCzrJv2UVsAGbQ2hNdCRyxTa9cWVySZqyDg2PqjxTeM1vZeKDtdGS1EY5et9sgycyg69A1ToaZB6LQiqi, with min ring size 5, no payment ID. 287 outputs to import. Is this okay? (Y/Yes/N/No): Y`
+
+`Transaction successfully signed to file signed_monero_tx, txid cd9679f4c528f140276e9777fa31193da76abdc143f4bbfa06bc0387eec1f028`
 
