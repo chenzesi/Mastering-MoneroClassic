@@ -30,15 +30,3 @@ OnlineB电脑需要使用**moneroclassicd **同步一份XMC的区块数据，同
 
 ./monero-wallet-cli --testnet --generate-from-view-key 45d7ca2be264d65b278f3ac30d2f2f804ae9e60bd716c3ca83561adab79c5405
 
-**\[wallet 9xALWu\]: viewkey**
-
-**Wallet password: \*\*\*\*\*\*\*\***
-
-**secret: 45d7ca2be264d65b278f3ac30d2f2f804ae9e60bd716c3ca83561adab79c5405**
-
-**public: 5cfc7f99e19ab8df4593341f299c03957d422693c61526d717df1916d5d84259**
-
-**\[wallet 9xALWu\]: address**
-
-**9xALWudHXg4LWRtCzrJv2UVsAGbQ2hNdCRyxTa9cWVySZqyDg2PqjxTeM1vZeKDtdGS1EY5et9sgycyg69A1ToaZB6LQiqi**
-
