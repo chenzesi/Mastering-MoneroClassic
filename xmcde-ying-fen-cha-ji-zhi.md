@@ -6,7 +6,9 @@
 
 * src/cryptonote\_basic/hardfork.cpp
 * src/cryptonote\_core/blockchain.cpp
-* src/cryptonote\_core/cryptonote\_tx\_utils_._cpp
+* src/cryptonote\_core/cryptonote\_tx\_utils.cpp
+
+
 
 
 
