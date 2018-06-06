@@ -48,7 +48,7 @@
 >
 > `287 outputs imported`
 
-7.在OfflineA电脑上使用冷钱包的export\_key\_images 导出key images
+7.在OfflineA电脑上使用冷钱包的**export\_key\_images** 导出key images
 
 > `[wallet 9xALWu]: export_key_images key_images`
 >
@@ -58,9 +58,13 @@
 
 8.将导出的key images文件复制到OnlineB电脑中viewonly钱包的工作目录
 
+9.使用OnlineB电脑中的viewonly钱包的**import\_key\_images **命令导入key images
 
+> `[wallet 9xALWu]: import_key_images key_images`
+>
+> `Signed key images imported to height 1158864, 1538.565679611275 spent, 462.166105654977 unspent`
 
-4.使用**transfer**命令在只读钱包钱包产生未签名的transaction，结果会被写到unsigned\_monero\_tx
+10.使用**transfer**命令在只读钱包钱包产生未签名的transaction，结果会被写到unsigned\_monero\_tx
 
 > `[wallet 9xALWu]: transfer 9wd28TGpRBP3vB4Zc8Zgrpfjyp9hjtAHHBoMvCa8KnVZ1ofqAJE5iFYaBvWsnj8QFERJU3DVXrWNwVADMacUwCwCATyLEp8 200`
 >
@@ -74,9 +78,9 @@
 >
 > `Unsigned transaction(s) successfully written to file: unsigned_monero_tx`
 
-5.讲未签名的交易文件unsigned\_monero\_tx复制到OffinleA电脑中冷钱包的工作目录（使用非联网的方式）
+11.讲未签名的交易文件unsigned\_monero\_tx复制到OffinleA电脑中冷钱包的工作目录（使用非联网的方式）
 
-6.在OfflineA电脑中的冷钱包中，使用sign\_transfer对没签名的交易签名，签名后产生文件signed\_monero\_tx:
+12.在OfflineA电脑中的冷钱包中，使用sign\_transfer对没签名的交易签名，签名后产生文件signed\_monero\_tx:
 
 > `[wallet 9xALWu]: sign_transfer`
 >
