@@ -40,7 +40,7 @@
 >
 > `Outputs exported to outputs`
 
-5.在OfflineA电脑上使用
+5.在OfflineA电脑上使用冷钱包的import\_outputs命令导入outputs
 
 4.使用**transfer**命令在只读钱包钱包产生未签名的transaction，结果会被写到unsigned\_monero\_tx
 
