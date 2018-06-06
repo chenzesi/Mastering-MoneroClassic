@@ -56,6 +56,10 @@
 >
 > `Signed key images exported to key_images`
 
+8.将导出的key images文件复制到OnlineB电脑中viewonly钱包的工作目录
+
+
+
 4.使用**transfer**命令在只读钱包钱包产生未签名的transaction，结果会被写到unsigned\_monero\_tx
 
 > `[wallet 9xALWu]: transfer 9wd28TGpRBP3vB4Zc8Zgrpfjyp9hjtAHHBoMvCa8KnVZ1ofqAJE5iFYaBvWsnj8QFERJU3DVXrWNwVADMacUwCwCATyLEp8 200`
