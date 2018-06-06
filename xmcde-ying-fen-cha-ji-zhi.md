@@ -22,5 +22,7 @@ hardfork.cpp中定义了struct mainnet\_hard_\_forks和struct testnet_\_hard_for
 
 `}`
 
+其中version表示分叉版本，height表示分叉高度，threshold目前全部设置为0，time表示分叉版本发布时间。
+
 
 
