@@ -78,7 +78,7 @@
 >
 > `Unsigned transaction(s) successfully written to file: unsigned_monero_tx`
 
-11.讲未签名的交易文件unsigned\_monero\_tx复制到OffinleA电脑中冷钱包的工作目录（使用非联网的方式）
+11.将未签名的交易文件unsigned\_monero\_tx复制到OffinleA电脑中冷钱包的工作目录（使用非联网的方式）
 
 12.在OfflineA电脑中的冷钱包中，使用sign\_transfer对没签名的交易签名，签名后产生文件signed\_monero\_tx:
 
