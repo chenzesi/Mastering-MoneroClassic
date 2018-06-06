@@ -12,7 +12,7 @@
 
 对于使用XMC离线钱包支付的情形:
 
-1.使用**./moneroclassic-wallet-cli --testnet** 命令在OfflineA电脑上创建新钱包
+1.使用**./moneroclassic-wallet-cli --testnet** 命令在OfflineA电脑上创建新的冷钱包
 
 用**address**命令显示address，用**viewkey**命令显示viewkey
 
@@ -34,7 +34,13 @@
 
 4.在OnlineB电脑上使用viewonly钱包的**export\_outputs **命令导出outputs
 
+> `[wallet 9xALWu]: export_outputs outputs`
+>
+> `Wallet password: ********`
+>
+> `Outputs exported to outputs`
 
+5.在OfflineA电脑上使用
 
 4.使用**transfer**命令在只读钱包钱包产生未签名的transaction，结果会被写到unsigned\_monero\_tx
 
