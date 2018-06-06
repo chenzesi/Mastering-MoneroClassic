@@ -8,5 +8,5 @@
 * src/cryptonote\_core/blockchain.cpp
 * src/cryptonote\_core/cryptonote\_tx\_utils.cpp
 
-hardfork.cpp
+hardfork.cpp中定义了struct mainnet\_hard_\__forks和struct testnet_\__hard_\__forks
 
