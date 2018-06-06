@@ -40,7 +40,7 @@
 >
 > `Outputs exported to outputs`
 
-5.将导出的文件outputs从OnlineB复制到OfflineA的冷钱包工作目录
+5.将导出的文件outputs从OnlineB复制到OfflineA的冷钱包工作目录（使用非联网的方式）
 
 6.在OfflineA电脑上使用冷钱包的**import\_outputs**命令导入outputs
 
@@ -56,7 +56,7 @@
 >
 > `Signed key images exported to key_images`
 
-8.将导出的key images文件复制到OnlineB电脑中viewonly钱包的工作目录
+8.将导出的key images文件复制到OnlineB电脑中viewonly钱包的工作目录（使用非联网的方式）
 
 9.使用OnlineB电脑中的viewonly钱包的**import\_key\_images **命令导入key images
 
