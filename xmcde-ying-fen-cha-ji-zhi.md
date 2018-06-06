@@ -8,5 +8,5 @@
 * src/cryptonote\_core/blockchain.cpp
 * src/cryptonote\_core/cryptonote\_tx\_utils.cpp
 
-hardfork.cpp中定义了struct mainnet\_hard_\_forks和struct testnet_\_hard\_forks, struct中包含uint8 version, 
+hardfork.cpp中定义了struct mainnet\_hard_\_forks和struct testnet_\_hard_forks, struct中包含uint8\_t version， uint64\_t height，uint8\_t threshold，time\_t time_
 
