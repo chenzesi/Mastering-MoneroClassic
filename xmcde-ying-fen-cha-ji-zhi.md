@@ -8,21 +8,21 @@
 * src/cryptonote\_core/blockchain.cpp
 * src/cryptonote\_core/cryptonote\_tx\_utils.cpp
 
-hardfork.cpp中定义了struct mainnet\_hard_\_forks和struct testnet_\_hard_forks, struct中包含uint8\_t version， uint64\_t height，uint8\_t threshold，time\_t time_
+hardfork.cpp中定义了struct mainnet\_hard_\_forks和struct testnet_\_hard_forks, struct中包含uint8\_t version， uint64\_t height，uint8\_t threshold，time\_t time_和mainnet\_hard\_fork\_version\_1\_till，testnet\_hard\_fork\_version\_1\_till
 
-`static const struct{`
+> `static const struct{`
+>
+> `uint8_t version;`
+>
+> `uint64_t height;`
+>
+> `uint8_t threshold;`
+>
+> `time_t time;`
+>
+> `}`
 
-`uint8_t version;`
-
-`uint64_t height;`
-
-`uint8_t threshold;`
-
-`time_t time;`
-
-`}`
-
-其中version表示分叉版本，height表示分叉高度，threshold目前全部设置为0，time表示分叉版本发布时间。
+其中version表示分叉版本，height表示分叉高度，threshold目前全部设置为0，time表示分叉版本发布时间。mainet_hard_fork_version_1_till和testnet_hard_fork\_version\_1\_till表示版本1分叉的高度的上一个高度。_
 
 
 
