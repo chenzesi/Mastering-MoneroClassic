@@ -40,7 +40,7 @@
 >
 > `Outputs exported to outputs`
 
-5.
+5.将导出的文件outputs从OnlineB复制到OfflineA的冷钱包工作目录
 
 6.在OfflineA电脑上使用冷钱包的**import\_outputs**命令导入outputs
 
