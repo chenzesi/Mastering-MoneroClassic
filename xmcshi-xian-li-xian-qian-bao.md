@@ -32,7 +32,9 @@
 
 3.在OnlineB电脑上使用**./moneroclassic-wallet-cli --testnet --generate-from-view-key viewonlywallet **命令创建只读钱包。输入命令后，会提示填写Standard address和viewkey, 填上文中对应的address和viewkey即可。
 
-4.在OnlineB电脑上使用viewonly钱包的**export\_outputs **命令导出
+4.在OnlineB电脑上使用viewonly钱包的**export\_outputs **命令导出outputs
+
+
 
 4.使用**transfer**命令在只读钱包钱包产生未签名的transaction，结果会被写到unsigned\_monero\_tx
 
