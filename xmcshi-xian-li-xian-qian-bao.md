@@ -44,6 +44,12 @@
 
 6.在OfflineA电脑上使用冷钱包的**import\_outputs**命令导入outputs
 
+> `[wallet 9xALWu]: import_outputs outputs`
+>
+> `287 outputs imported`
+
+7.在OnlineB电脑上使用viewonly钱包的export_key_images 导出key images
+
 4.使用**transfer**命令在只读钱包钱包产生未签名的transaction，结果会被写到unsigned\_monero\_tx
 
 > `[wallet 9xALWu]: transfer 9wd28TGpRBP3vB4Zc8Zgrpfjyp9hjtAHHBoMvCa8KnVZ1ofqAJE5iFYaBvWsnj8QFERJU3DVXrWNwVADMacUwCwCATyLEp8 200`
