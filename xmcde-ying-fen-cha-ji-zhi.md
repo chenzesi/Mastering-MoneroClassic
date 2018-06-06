@@ -24,5 +24,3 @@ hardfork.cpp中定义了struct mainnet\_hard\_forks和struct_ \_testnet\_hard\_f
 
 其中version表示分叉版本，height表示分叉高度，threshold目前全部设置为0，time表示分叉版本发布时间。mainethard\_fork\_version\_1\_till和testnet\_hard\_fork\_version\_1\_till表示版本1分叉的高度的上一个高度（分叉高度减一）。blockchain.cpp 中init初始化了HardFork instance
 
-
-
