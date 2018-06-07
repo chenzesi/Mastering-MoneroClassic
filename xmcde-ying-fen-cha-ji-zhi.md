@@ -30,3 +30,5 @@ hardfork.cpp中定义了struct mainnet\_hard\_forks和struct_ testnet\_hard\_for
 
 
 
+
+
