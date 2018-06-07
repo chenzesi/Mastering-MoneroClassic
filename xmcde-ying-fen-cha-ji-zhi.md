@@ -8,7 +8,7 @@
 * src/cryptonote\_core/blockchain.cpp
 * src/cryptonote\_core/cryptonote\_tx\_utils.cpp
 
-hardfork.cpp中定义了struct mainnet\_hard\_forks和struct_ testnet\_hard\_forks, \_struct_中包含uint8\_t version，uint64\_t height，uint8\_t threshold，time\_t time和mainnet\_hard\_fork\_version\_1\_till，testnet\_hard\_fork\_version\_1\_till
+hardfork.cpp中定义了struct mainnet\_hard\_forks和struct_ _testnet\_hard\_forks_, _struct中包含uint8\_t version，uint64\_t height，uint8\_t threshold，time\_t time和mainnet\_hard\_fork\_version\_1\_till，testnet\_hard\_fork\_version\_1\_till
 
 > `static const struct{`
 >
@@ -27,8 +27,6 @@ hardfork.cpp中定义了struct mainnet\_hard\_forks和struct_ testnet\_hard\_for
 > `for (size_t n = 0; n < sizeof(mainnet_hard_forks) / sizeof(mainnet_hard_forks[0]); ++n)`
 >
 > `m_hardfork->add_fork(mainnet_hard_forks[n].version, mainnet_hard_forks[n].height, mainnet_hard_forks[n].threshold, mainnet_hard_forks[n].time);`
-
-
 
 
 
