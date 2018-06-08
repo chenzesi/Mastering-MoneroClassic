@@ -54,11 +54,13 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 > `/Users/xiaobin/code/monero-gui/monero/contrib/epee/include/syncobj.h:37:10: fatal error:`
 >
-> `      'boost/thread/v2/thread.hpp' file not found`
+> `'boost/thread/v2/thread.hpp' file not found`
 
-将
+将/usr/local/Cellar/boost/1.67.0\_1/include/boost/thread目录中的thread.hpp复制到/usr/local/Cellar/boost/1.67.0\_1/include/boost/thread/v2文件夹下:
 
-ubuntu系统的编译，以ubuntu16.04为例:
+> `cp /usr/local/Cellar/boost/1.67.0_1/include/boost/thread/thread.hpp /usr/local/Cellar/boost/1.67.0_1/include/boost/thread/v2`
+>
+> ubuntu系统的编译，以ubuntu16.04为例:
 
 windows系统的编译
 
