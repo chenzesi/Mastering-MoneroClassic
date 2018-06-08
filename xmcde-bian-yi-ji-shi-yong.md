@@ -52,6 +52,12 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 编译完成后，会在monero-gui/build/release/bin/monero-wallet-gui.app/Contents/MacOS路径下生成可执行文件**monero-wallet-gui**和**monerod**
 
+> `/Users/xiaobin/code/monero-gui/monero/contrib/epee/include/syncobj.h:37:10: fatal error:`
+>
+> `      'boost/thread/v2/thread.hpp' file not found`
+
+将
+
 ubuntu系统的编译，以ubuntu16.04为例:
 
 windows系统的编译
