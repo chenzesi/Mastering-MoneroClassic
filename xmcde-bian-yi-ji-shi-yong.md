@@ -63,8 +63,10 @@ OSX系统的编译, 以OSX 10.13.4为例:
 解决方法是将/usr/local/Cellar/boost/1.67.0\_1/include/boost/thread目录中的thread.hpp复制到/usr/local/Cellar/boost/1.67.0\_1/include/boost/thread/v2文件夹下:
 
 > `cp /usr/local/Cellar/boost/1.67.0_1/include/boost/thread/thread.hpp /usr/local/Cellar/boost/1.67.0_1/include/boost/thread/v2`
->
-> ubuntu系统的编译，以ubuntu16.04为例:
+
+ubuntu系统的编译
 
 windows系统的编译
+
+
 
