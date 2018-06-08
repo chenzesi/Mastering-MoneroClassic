@@ -52,11 +52,15 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 编译完成后，会在monero-gui/build/release/bin/monero-wallet-gui.app/Contents/MacOS路径下生成可执行文件**monero-wallet-gui**和**monerod**
 
+常见问题
+
+如果使用boost1.67.0\_1可能会出现以下error:
+
 > `/Users/xiaobin/code/monero-gui/monero/contrib/epee/include/syncobj.h:37:10: fatal error:`
 >
 > `'boost/thread/v2/thread.hpp' file not found`
 
-将/usr/local/Cellar/boost/1.67.0\_1/include/boost/thread目录中的thread.hpp复制到/usr/local/Cellar/boost/1.67.0\_1/include/boost/thread/v2文件夹下:
+解决方法是将/usr/local/Cellar/boost/1.67.0\_1/include/boost/thread目录中的thread.hpp复制到/usr/local/Cellar/boost/1.67.0\_1/include/boost/thread/v2文件夹下:
 
 > `cp /usr/local/Cellar/boost/1.67.0_1/include/boost/thread/thread.hpp /usr/local/Cellar/boost/1.67.0_1/include/boost/thread/v2`
 >
