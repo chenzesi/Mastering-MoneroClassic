@@ -6,7 +6,7 @@ XMC的代码官方代码地址为:[https://github.com/monero-classic/monero](htt
 
 OSX系统的编译, 以OSX 10.13.4为例:
 
-1.安装依赖库: brew install cmake, brew install jmuncaster/header-only/cppzmq
+1.安装依赖库: brew install cmake jmuncaster/header-only/cppzmq
 
 2.打开monero文件夹: cd monero
 
