@@ -72,7 +72,7 @@ ubuntu系统的编译
 
 3.**source .bashrc**
 
-4.
+4.安装依赖包**sudo apt install libreadline-dev libgl-dev**
 
 windows系统的编译
 
