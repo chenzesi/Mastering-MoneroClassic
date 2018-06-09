@@ -74,5 +74,7 @@ ubuntu系统的编译
 
 4.安装依赖包**sudo apt install libreadline-dev libgl-dev**
 
+5.运行./build.sh编译
+
 windows系统的编译
 
