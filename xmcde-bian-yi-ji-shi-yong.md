@@ -20,7 +20,7 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 Ubuntu系统的编译,以ubuntu 16.04为例:
 
-1.安装依赖库: sudo apt install libssl-dev libboost-all-dev cmake libzmq3-dev 
+1.安装依赖库: sudo apt install libssl-dev libboost-all-dev cmake libzmq3-dev
 
 2.开打monero文件夹: cd monero
 
@@ -40,7 +40,7 @@ Window系统的编译:
 
 OSX系统的编译, 以OSX 10.13.4为例:
 
-1.下载并安装qt5, 现在链接为: [https://download.qt.io/archive/qt/5.10/5.10.1/](https://download.qt.io/archive/qt/5.10/5.10.1/) ，将qt5安装在home路径下
+1.下载并安装qt5, 下载链接为: [https://download.qt.io/archive/qt/5.10/5.10.1/](https://download.qt.io/archive/qt/5.10/5.10.1/) ，将qt5安装在home路径下
 
 2.配置qt5的路径，将**export PATH=$PATH:$HOME/Qt5.10.1/5.10.1/clang64/bin**_ _添加到**.bash\_profile**的末尾
 
