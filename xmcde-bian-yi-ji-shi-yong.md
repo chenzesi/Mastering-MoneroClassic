@@ -20,7 +20,7 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 Ubuntu系统的编译,以ubuntu 16.04为例:
 
-1.安装依赖库: sudo apt install libssl-dev libboost-all-dev cmake
+1.安装依赖库: sudo apt install libssl-dev libboost-all-dev cmake libzmq3-dev 
 
 2.开打monero文件夹: cd monero
 
@@ -67,6 +67,4 @@ OSX系统的编译, 以OSX 10.13.4为例:
 ubuntu系统的编译
 
 windows系统的编译
-
-
 
