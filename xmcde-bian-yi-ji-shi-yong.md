@@ -66,7 +66,9 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 ubuntu系统的编译
 
-1.下载并安装qt5, 下载链接为: [https://download.qt.io/archive/qt/5.10/5.10.1/](https://download.qt.io/archive/qt/5.10/5.10.1/) 
+1.下载并安装qt5, 下载链接为: [https://download.qt.io/archive/qt/5.10/5.10.1/](https://download.qt.io/archive/qt/5.10/5.10.1/)，将qt5安装在默认路径下
+
+2.
 
 windows系统的编译
 
