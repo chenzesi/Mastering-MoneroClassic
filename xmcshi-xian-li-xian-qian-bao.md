@@ -4,7 +4,7 @@
 
 所以，最简单的离线钱包形式应该是包含两台电脑，其中一台电脑离线，我们称之为OfflineA，另外一台电脑在线，我们称之为OnlineB。由于XMC包含spend key 和 view key两种类型的私钥，其中view key可以用来查看余额，但是不能花费余额，可以将view key放在OnlineB电脑中。XMC编译完成后产生后共有**moneroclassic-blockchain-export** ，**moneroclassic-blockchain-import moneroclassic-wallet-cli ，moneroclassic-wallet-rpc**  和 **moneroclassicd。**
 
-使用simplewallet实现离线钱包:
+### 使用simplewallet实现离线钱包:
 
 1.OnlineB包括view only钱包，完整的区块同步的节点（**moneroclassicd** 和**moneroclassic-wallet-cli**）。
 
@@ -101,6 +101,8 @@
 > `Loaded 1 transactions, for 21.609111149840, fee 0.016802400000, sending 20.000000000000 to 9wd28TGpRBP3vB4Zc8Zgrpfjyp9hjtAHHBoMvCa8KnVZ1ofqAJE5iFYaBvWsnj8QFERJU3DVXrWNwVADMacUwCwCATyLEp8, 1.592308749840 change to 9xALWudHXg4LWRtCzrJv2UVsAGbQ2hNdCRyxTa9cWVySZqyDg2PqjxTeM1vZeKDtdGS1EY5et9sgycyg69A1ToaZB6LQiqi, with min ring size 5, no payment ID. 287 key images to import. Is this okay? (Y/Yes/N/No): Y`
 >
 > `Money successfully sent, transaction: <987db6be2e5a2a2ca60ebed258e431207975c418bd0de74e97351c46d2849753>`
+
+### 使用RPC实现离线钱包:
 
 
 
