@@ -68,7 +68,7 @@ ubuntu系统的编译
 
 1.下载并安装qt5, 下载链接为: [https://download.qt.io/archive/qt/5.10/5.10.1/](https://download.qt.io/archive/qt/5.10/5.10.1/)，将qt5安装在默认路径下
 
-2.配置qt5的路径，将**export PATH=$PATH:$HOME/Qt5.10.1/5.10.1/clang64/bin**_ _添加到**.bash\_profile**的末尾
+2.配置qt5的路径，将**export PATH=$PATH:$HOME/Qt5.10.1/5.10.1/gcc\_64/bin**_ _添加到**.bashrc**的末尾
 
 3.**source .bashrc**
 
