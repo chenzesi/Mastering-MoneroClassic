@@ -35,6 +35,10 @@ blockchain.cpp 中init初始化了HardFork，并且添加各个hard fork版本�
 
 除添加上述版本信息外，init function中还会调用HardFork类的init function. hardfork.h中定义了
 
+> `uint32_t current_fork_index;`
+
+用来跟踪最新的hardfork的index
+
 XMC使用了lmdb作为database， 其中跟hardfork相关的数据，记录了每个高度对应的分叉版本，所以可以使用
 
 > `uint8_t BlockchainLMDB::get_hard_fork_version(uint64_t height)const`
