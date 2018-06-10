@@ -13,7 +13,7 @@ hardfork.cpp中定义了struct mainnet\_hard\_forks和struct testnethardforks, \
 
 > **static const struct**{
 >
->  uint8\_t version;
+> uint8\_t version;
 >
 > uint64\_t height;
 >
@@ -37,7 +37,7 @@ hardfork.cpp中定义了struct mainnet\_hard\_forks和struct testnethardforks, \
 >
 > // version 4 starts from block 1220516, which is on or around the 5th of January, 2017. Fork time finalised on 2016-09-18.{4,1220516,0,1483574400},
 >
-> // version 5 starts from block 1288616, which is on or around the 15th of April, 2017. Fork time finalised on 2017-03-14.{5,1288616,0,1489520158}, 
+> // version 5 starts from block 1288616, which is on or around the 15th of April, 2017. Fork time finalised on 2017-03-14.{5,1288616,0,1489520158},
 >
 > // version 6 starts from block 1400000, which is on or around the 16th of September, 2017. Fork time finalised on 2017-08-18.
 >
@@ -59,7 +59,7 @@ blockchain.cpp 中init初始化了HardFork，并且添加各个hard fork版本�
 
 > `uint32_t current_fork_index;`
 
-用来跟踪最新的hardfork的index
+用来跟踪最新的hardfork的index，rescan\_from\_block\_height方法会修改current\_fork\_index的值_，_使之等于同步到的区块的高度对应的hardfork version.
 
 XMC使用了lmdb作为database， 其中跟hardfork相关的数据，记录了每个高度对应的分叉版本，所以可以使用
 
