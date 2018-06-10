@@ -33,6 +33,8 @@ blockchain.cpp 中init初始化了HardFork，并且添加各个hard fork版本�
 >
 > `m_hardfork->add_fork(mainnet_hard_forks[n].version, mainnet_hard_forks[n].height, mainnet_hard_forks[n].threshold, mainnet_hard_forks[n].time);`
 
+除添加上述版本信息外，init function中还会调用HardFork类的init function. hardfork.h中定义了
+
 XMC使用了lmdb作为database， 其中跟hardfork相关的数据，记录了每个高度对应的分叉版本，所以可以使用
 
 > `uint8_t BlockchainLMDB::get_hard_fork_version(uint64_t height)const`
