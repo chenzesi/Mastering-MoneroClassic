@@ -32,6 +32,12 @@ blockchain.cpp 中init初始化了HardFork，并且添加各个hard fork版本�
 >
 > `m_hardfork->add_fork(mainnet_hard_forks[n].version, mainnet_hard_forks[n].height, mainnet_hard_forks[n].threshold, mainnet_hard_forks[n].time);`
 
+#### 
+
+#### 
+
+#### 
+
 #### HardFork state
 
 src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t forked\_time 和 time\_t update\_time，其默认值分别是
