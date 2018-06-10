@@ -30,9 +30,9 @@ hardfork.cpp中定义了struct mainnet\_hard\_forks和struct testnethardforks, \
 
 src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t forked\_time 和 time\_t update\_time，其默认值分别是
 
-> `static const time_t DEFAULT_FORKED_TIME =31557600;// a year in seconds `
+> `static const time_t DEFAULT_FORKED_TIME =31557600;// a year in seconds`
 >
 > `static const time_t DEFAULT_UPDATE_TIME =31557600/2;`
 
-
+此两个变量会用来产生hardfork state，
 
