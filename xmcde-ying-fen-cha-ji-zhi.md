@@ -119,7 +119,7 @@ src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t for
 
 #### HardFork Example
 
-在此，以XMR第七次分叉为例，讲解如何实施一次硬分叉。XMR第七次硬分叉也是产生XMR和XMC版本的一次分叉。此次分叉中，XMR主要更新了
+在此，以XMR第七次分叉为例，讲解如何实施一次硬分叉。XMR第七次硬分叉也是产生XMR和XMC版本的一次分叉。此次分叉中，XMR主要更新了挖矿算法以抵制矿机。
 
 HardFork类中的get\_current\_version function可以用来获取同步到的区块高度对应的分叉版本，此分叉版本的值
 
