@@ -28,6 +28,8 @@ hardfork.cpp中定义了struct mainnet\_hard\_forks和struct testnethardforks, \
 >
 > `m_hardfork->add_fork(mainnet_hard_forks[n].version, mainnet_hard_forks[n].height, mainnet_hard_forks[n].threshold, mainnet_hard_forks[n].time);`
 
+### HardFork state
+
 src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t forked\_time 和 time\_t update\_time，其默认值分别是
 
 > `static const time_t DEFAULT_FORKED_TIME =31557600;// a year in seconds`
@@ -74,9 +76,9 @@ src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t for
 
 > `*****************************************************************`
 >
-> `2018-06-10 03:50:33.156	[P2P1]	WARN 	global	src/cryptonote_core/cryptonote_core.cpp:1380	Last scheduled hard fork time shows a daemon update is needed soon.`
+> `2018-06-10 03:50:33.156    [P2P1]    WARN     global    src/cryptonote_core/cryptonote_core.cpp:1380    Last scheduled hard fork time shows a daemon update is needed soon.`
 >
-> `2018-06-10 03:50:33.156	[P2P1]	WARN 	global	src/cryptonote_core/cryptonote_core.cpp:1381	**********************************************************************`
+> `2018-06-10 03:50:33.156    [P2P1]    WARN     global    src/cryptonote_core/cryptonote_core.cpp:1381    **********************************************************************`
 
 
 
