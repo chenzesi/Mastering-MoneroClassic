@@ -7,6 +7,7 @@
 * src/cryptonote\_basic/hardfork.cpp
 * src/cryptonote\_core/blockchain.cpp
 * src/cryptonote\_core/cryptonote\_tx\_utils.cpp
+* src/blockchain\_db/lmdb/db\_lmdb.cpp
 
 hardfork.cpp中定义了struct mainnet\_hard\_forks和struct testnethardforks, \_struct中包含uint8\_t version，uint64\_t height，uint8\_t threshold，time\_t time和mainnet\_hard\_fork\_version\_1\_till，testnet\_hard\_fork\_version\_1\_till
 
@@ -32,9 +33,11 @@ blockchain.cpp 中init初始化了HardFork，并且添加各个hard fork版本�
 >
 > `m_hardfork->add_fork(mainnet_hard_forks[n].version, mainnet_hard_forks[n].height, mainnet_hard_forks[n].threshold, mainnet_hard_forks[n].time);`
 
-XMC使用了lmdb作为database， 其中跟hardfork相关的数据，记录了
+XMC使用了lmdb作为database， 其中跟hardfork相关的数据，记录了每个高度对应的分叉版本，所以可以使用
 
-#### 
+> `uint8_t BlockchainLMDB::get_hard_fork_version(uint64_t height)`**`const`**
+
+来获得某个已有高度的block对应的分叉版本信息
 
 #### HardFork state
 
