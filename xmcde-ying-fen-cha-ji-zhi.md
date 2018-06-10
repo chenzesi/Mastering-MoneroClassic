@@ -34,41 +34,49 @@ src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t for
 >
 > `static const time_t DEFAULT_UPDATE_TIME =31557600/2;`
 
-此两个变量会用来产生hardfork state，state产生方法如下代码所示，钱包启动时，会检查state信息，如果是LikelyForked或者UpdateNeeded状态，会显示出提示信息。
+此两个变量会用来产生hardfork state，state产生方法如下代码所示，
 
-> `HardFork::State HardFork::get_state(time_t t)`**`const`**
+> `HardFork::State HardFork::get_state(time_t t)const`
 >
 > `{`
 >
-> ` CRITICAL_REGION_LOCAL(lock);`
+> `CRITICAL_REGION_LOCAL(lock);`
 >
 > `// no hard forks setup yet`
 >
-> **`if`**`(heights.size() <=1)`
+> `if(heights.size() <=1)`
 >
-> **`return`**`Ready;`
+> `returnReady;`
 >
 > `time_t t_last_fork = heights.back().time;`
 >
-> **`if`**`(t >= t_last_fork + forked_time)`
+> `if(t >= t_last_fork + forked_time)`
 >
-> **`return`**`LikelyForked;`
+> `returnLikelyForked;`
 >
-> **`if`**`(t >= t_last_fork + update_time)`
+> `if(t >= t_last_fork + update_time)`
 >
-> **`return`**`UpdateNeeded;`
+> `returnUpdateNeeded;`
 >
-> **`return`**`Ready;`
+> `returnReady;`
 >
 > `}`
 >
-> `HardFork::State HardFork::get_state()`**`const`**
+> `HardFork::State HardFork::get_state()const`
 >
 > `{`
 >
-> **`return`**`get_state(time(NULL));`
+> `returnget_state(time(NULL));`
 >
 > `}`
+
+钱包启动时，会检查state信息，如果是LikelyForked或者UpdateNeeded状态，会显示出提示信息。
+
+> `*****************************************************************`
+>
+> `2018-06-10 03:50:33.156	[P2P1]	WARN 	global	src/cryptonote_core/cryptonote_core.cpp:1380	Last scheduled hard fork time shows a daemon update is needed soon.`
+>
+> `2018-06-10 03:50:33.156	[P2P1]	WARN 	global	src/cryptonote_core/cryptonote_core.cpp:1381	**********************************************************************`
 
 
 
