@@ -59,9 +59,7 @@ blockchain.cpp 中init初始化了HardFork，并且添加各个hard fork版本�
 
 > `uint32_t current_fork_index;`
 
-用来跟踪最新的hardfork的index，rescan\_from\_block\_height方法会修改current\_fork\_index的值_，_使之等于同步到的区块的高度对应的hardfork version.
-
-XMC使用了lmdb作为database， 其中跟hardfork相关的数据，记录了每个高度对应的分叉版本，所以可以使用
+用来跟踪最新的hardfork的index，rescan\_from\_block\_height方法会修改current\_fork\_index的值_，_使之等于同步到的区块的高度对应的hardfork version. XMC使用了lmdb作为database， 其中跟hardfork相关的数据，记录了每个高度对应的分叉版本，所以可以使用
 
 > `uint8_t BlockchainLMDB::get_hard_fork_version(uint64_t height)const`
 
@@ -118,6 +116,8 @@ src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t for
 > `2018-06-10 03:50:33.156    [P2P1]    WARN     global    src/cryptonote_core/cryptonote_core.cpp:1380    Last scheduled hard fork time shows a daemon update is needed soon.`
 >
 > `2018-06-10 03:50:33.156    [P2P1]    WARN     global    src/cryptonote_core/cryptonote_core.cpp:1381    **********************************************************************`
+
+#### HardFork Example
 
 
 
