@@ -28,5 +28,5 @@ hardfork.cpp中定义了struct mainnet\_hard\_forks和struct testnethardforks, \
 >
 > `m_hardfork->add_fork(mainnet_hard_forks[n].version, mainnet_hard_forks[n].height, mainnet_hard_forks[n].threshold, mainnet_hard_forks[n].time);`
 
-src/cryptonote\_basic/hardfork.h中定义了两个时间的成员变量timet forked\_time 和
+src/cryptonote_basic/hardfork.h中定义了两个时间的成员变量time_\_t forked\_time 和
 
