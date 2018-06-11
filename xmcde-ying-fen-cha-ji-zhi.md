@@ -121,7 +121,13 @@ src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t for
 
 在此，以XMR第七次分叉为例，讲解如何实施一次硬分叉。XMR第七次硬分叉也是产生XMR和XMC版本的一次分叉。此次分叉中，XMR主要更新了挖矿算法以抵制矿机。一次硬分叉的核心内容就是到达分叉高度后，所有节点同步切换到新的共识上来。未到达分叉之前的客户端是对旧版本兼容的。
 
+
+
 实施XMR第七次分叉，首先要修改src/cryptonote\_core/blockchain.cpp中mainnet\_hard\_forks数组，添加第七次分叉高度，版本，threshold,和时间等信息。
 
-HardFork类中的get\_current\_version function可以用来获取同步到的区块高度对应的分叉版本，此分叉版本的值等于block header中major version字段的值，
+HardFork类中的get\_current\_version function可以用来获取同步到的区块高度对应的分叉版本，此分叉版本的值等于block header中major version字段的值。
+
+Refrence:
+
+https://github.com/monero-project/monero/pull/3253
 
