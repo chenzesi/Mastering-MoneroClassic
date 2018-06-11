@@ -123,7 +123,5 @@ src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t for
 
 实施XMR第七次分叉，首先要修改src/cryptonote\_core/blockchain.cpp中mainnet\_hard\_forks数组，添加第七次分叉高度，版本，threshold,和时间等信息。
 
-
-
-HardFork类中的get\_current\_version function可以用来获取同步到的区块高度对应的分叉版本，此分叉版本的值
+HardFork类中的get\_current\_version function可以用来获取同步到的区块高度对应的分叉版本，此分叉版本的值等于block header中major version字段的值，
 
