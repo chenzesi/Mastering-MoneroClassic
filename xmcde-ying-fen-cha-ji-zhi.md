@@ -129,5 +129,5 @@ Reference:
 
 [https://github.com/monero-project/monero/pull/3253](https://github.com/monero-project/monero/pull/3253)
 
-https://github.com/KlausT/ccminer-cryptonight/pull/65/commits/3364c938e2682a58f0aa577fa966500e83350da8
+[https://github.com/KlausT/ccminer-cryptonight/pull/65/commits/3364c938e2682a58f0aa577fa966500e83350da8](https://github.com/KlausT/ccminer-cryptonight/pull/65/commits/3364c938e2682a58f0aa577fa966500e83350da8)
 
