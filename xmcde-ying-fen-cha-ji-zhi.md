@@ -145,7 +145,7 @@ HardFork类中的getcurrentversion function可以用来获取同步到的区块�
 >
 > `blobdata bd = get_block_hashing_blob(b);`
 >
-> **`const int cn_variant = b.major_version >=7? b.major_version -6:0;`**
+> `const int cn_variant = b.major_version >=7? b.major_version -6:0;`
 >
 > `crypto::cn_slow_hash(bd.data(),bd.size(),res,cn_variant);`
 >
@@ -153,7 +153,7 @@ HardFork类中的getcurrentversion function可以用来获取同步到的区块�
 >
 > `}`
 
-Reference:
+#### Reference:
 
 [https://github.com/monero-project/monero/pull/3253](https://github.com/monero-project/monero/pull/3253)
 
