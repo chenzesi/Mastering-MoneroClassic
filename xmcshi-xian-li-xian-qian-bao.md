@@ -104,7 +104,5 @@
 
 ### 使用RPC实现离线钱包:
 
-
-
-
+使用rpc实现离线钱包的原理基本上与使用simplewallet相同。不同的地方在于需要使用**moneroclassic-wallet-rpc**代替**moneroclassic-wallet-cli**完成创建transaction，对transaction签名等操作。
 
