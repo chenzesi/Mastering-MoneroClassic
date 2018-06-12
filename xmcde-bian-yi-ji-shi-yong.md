@@ -36,6 +36,8 @@ OSX和Ubuntu系统编译成功后，都会生成五个可执行文件，分别�
 
 Window系统的编译:
 
+1.下载并安装MSYS2 environment 下载链接: http://repo.msys2.org/distrib/x86\_64/msys2-x86\_64-20180531.exe
+
 ## XMC GUI钱包的编译:
 
 OSX系统的编译, 以OSX 10.13.4为例:
