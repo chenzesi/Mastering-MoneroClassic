@@ -38,7 +38,7 @@ Window系统的编译:
 
 1.下载并安装MSYS2 environment 下载链接: [http://repo.msys2.org/distrib/x86\_64/msys2-x86\_64-20180531.exe](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20180531.exe)
 
-2.
+2.打开MSYS2MinGW64-bit, 使用**pacman -Syuu**更新软件包
 
 ## XMC GUI钱包的编译:
 
