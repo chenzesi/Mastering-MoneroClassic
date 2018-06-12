@@ -34,7 +34,7 @@ Ubuntu系统的编译,以ubuntu 16.04为例:
 
 OSX和Ubuntu系统编译成功后，都会生成五个可执行文件，分别是: moneroclassic-blockchain-export，moneroclassic-blockchain-import，moneroclassic-wallet-cli，moneroclassic-wallet-rpc 和 moneroclassicd
 
-Window 64bit系统的编译:
+Window 64-bit系统的编译:
 
 1.下载并安装MSYS2 environment 下载链接: [http://repo.msys2.org/distrib/x86\_64/msys2-x86\_64-20180531.exe](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20180531.exe)
 
