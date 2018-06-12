@@ -40,6 +40,8 @@ Window系统的编译:
 
 2.打开MSYS2MinGW64-bit, 使用**pacman -Syuu**更新软件包
 
+3.
+
 ## XMC GUI钱包的编译:
 
 OSX系统的编译, 以OSX 10.13.4为例:
