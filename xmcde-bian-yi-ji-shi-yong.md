@@ -40,7 +40,7 @@ Window系统的编译:
 
 2.打开MSYS2MinGW64-bit, 使用**pacman -Syuu**更新软件包
 
-3.
+3.安装依赖包:
 
 ## XMC GUI钱包的编译:
 
