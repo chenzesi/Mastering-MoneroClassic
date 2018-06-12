@@ -40,7 +40,9 @@ Window系统的编译:
 
 2.打开MSYS2MinGW64-bit, 使用**pacman -Syuu**更新软件包
 
-3.安装依赖包:
+3.安装依赖包:  ** pacman -S mingw-w64-x86\_64-toolchain make mingw-w64-x86\_64-cmake mingw-w64-x86\_64-boost mingw-w64-x86\_64-openssl mingw-w64-x86\_64-zeromq mingw-w64-x86\_64-libsodium**
+
+4.
 
 ## XMC GUI钱包的编译:
 
