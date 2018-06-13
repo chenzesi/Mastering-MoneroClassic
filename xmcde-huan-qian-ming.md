@@ -16,3 +16,7 @@
 
 [https://chaum.com/publications/Group\_Signatures.pdf](https://chaum.com/publications/Group_Signatures.pdf)
 
+https://www.iacr.org/archive/asiacrypt2001/22480554.pdf
+
+
+
