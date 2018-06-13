@@ -106,7 +106,7 @@
 
 使用rpc实现离线钱包的原理基本上与使用simplewallet相同。不同的地方在于需要使用**moneroclassic-wallet-rpc**代替**moneroclassic-wallet-cli**完成创建transaction，对transaction签名等操作。
 
-./moneroclassicd --testnet --rpc-bind-port 28081 --rpc-bind-ip 127.0.0.1
+./moneroclassicd --testnet --rpc-bind-port 28081 --rpc-bind-ip 127.0.0.1 --detach
 
 ./moneroclassic-wallet-rpc --testnet --rpc-bind-port 9000 --rpc-bind-ip 127.0.0.1 --rpc-login rpc\_username:rpc\_password --wallet-dir /home/ubuntu/wallet
 
