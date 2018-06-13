@@ -8,7 +8,9 @@
 2. 接受者可以验证签名是一个合法的环签名但是没有办法发现是哪个组成员对其进行了签名
 3. 如果有必要，签名可以被“打开”，签名人可以被揭示出来
 
-组签名的一个缺陷是也需要一个可信的第三方（Group Manager），此第三方唯一可以追溯签名人。Ronald L. Rivest, Adi Shamir 和Yael Tauman 在论文《How to Leak a Secret》中提出了环签名的概念，
+组签名的一个缺陷是也需要一个可信的第三方（Group Manager），此第三方唯一可以追溯签名人。Ronald L. Rivest, Adi Shamir 和Yael Tauman 在论文《How to Leak a Secret》中提出了环签名的概念。环签名是组签名（Group Signature）的发展，并且不再需要信任的第三方（Group Manager）完成流程。
+
+
 
 参考资料:
 
