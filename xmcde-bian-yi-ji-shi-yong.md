@@ -42,7 +42,7 @@ Window 64-bit系统的编译:
 
 3.安装依赖包:  ** pacman -S mingw-w64-x86\_64-toolchain make mingw-w64-x86\_64-cmake mingw-w64-x86\_64-boost mingw-w64-x86\_64-openssl mingw-w64-x86\_64-zeromq mingw-w64-x86\_64-libsodium**
 
-4.  使用**make release-static-win64**进行编译
+1. 使用**make release-static-win64**进行编译
 
 ## XMC GUI钱包的编译:
 
@@ -74,7 +74,7 @@ ubuntu系统的编译
 
 windows系统的编译
 
-##### 常见问题
+### 常见问题
 
 如果使用boost1.67.0\_1可能会出现以下error:
 
