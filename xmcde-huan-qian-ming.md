@@ -4,6 +4,12 @@
 
 环签名（Group Signatures）的概念最早是Chaum, David; van Heyst, Eugene在其1991年的论文《Group signatures》首先提出的。在其论文中，环签名（Group signature）被定义为包含以下三个性质:
 
+只有组里的成员可以签名only members of the group can sign messages
+
+the receiver can verify that it is a valid group signaa~e, but cannot discover which gr~up member made 
+
+\(i\) if necessary, the signature can be "opened", so that the person who signed the message is revealed. it;
+
 参考资料:
 
 [https://cryptonote.org/whitepaper.pdf](https://cryptonote.org/whitepaper.pdf)
