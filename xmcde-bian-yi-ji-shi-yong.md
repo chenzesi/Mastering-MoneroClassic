@@ -4,7 +4,7 @@ XMC的代码官方代码地址为:[https://github.com/monero-classic/monero](htt
 
 ## XMC非GUI钱包的编译:
 
-OSX系统的编译, 以OSX 10.13.4为例:
+#### OSX系统的编译, 以OSX 10.13.4为例:
 
 1.安装依赖库: brew install cmake jmuncaster/header-only/cppzmq
 
@@ -18,7 +18,7 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 6.编译生成可执行文件: make \(此处可以使用-j参数以增加编译速度，-j表示用来编译的核心数，例如make -j4表示使用四个CPU核心进行编译\)
 
-Ubuntu系统的编译,以ubuntu 16.04为例:
+#### Ubuntu系统的编译,以ubuntu 16.04为例:
 
 1.安装依赖库: sudo apt install libssl-dev libboost-all-dev cmake libzmq3-dev
 
@@ -34,7 +34,7 @@ Ubuntu系统的编译,以ubuntu 16.04为例:
 
 OSX和Ubuntu系统编译成功后，都会生成五个可执行文件，分别是: moneroclassic-blockchain-export，moneroclassic-blockchain-import，moneroclassic-wallet-cli，moneroclassic-wallet-rpc 和 moneroclassicd
 
-Window 64-bit系统的编译:
+#### Window 64-bit系统的编译:
 
 1.下载并安装MSYS2 environment 下载链接: [http://repo.msys2.org/distrib/x86\_64/msys2-x86\_64-20180531.exe](http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20180531.exe)
 
@@ -46,7 +46,7 @@ Window 64-bit系统的编译:
 
 ## XMC GUI钱包的编译:
 
-OSX系统的编译, 以OSX 10.13.4为例:
+#### OSX系统的编译, 以OSX 10.13.4为例:
 
 1.下载并安装qt5, 下载链接为: [https://download.qt.io/archive/qt/5.10/5.10.1/](https://download.qt.io/archive/qt/5.10/5.10.1/) ，将qt5安装在home路径下
 
@@ -60,7 +60,7 @@ OSX系统的编译, 以OSX 10.13.4为例:
 
 编译完成后，会在monero-gui/build/release/bin/monero-wallet-gui.app/Contents/MacOS路径下生成可执行文件**monero-wallet-gui**和**monerod**
 
-ubuntu系统的编译
+#### ubuntu系统的编译
 
 1.下载并安装qt5, 下载链接为: [https://download.qt.io/archive/qt/5.10/5.10.1/](https://download.qt.io/archive/qt/5.10/5.10.1/)，将qt5安装在默认路径下
 
