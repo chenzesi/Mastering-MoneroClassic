@@ -42,7 +42,7 @@ Window 64-bit系统的编译:
 
 3.安装依赖包:  ** pacman -S mingw-w64-x86\_64-toolchain make mingw-w64-x86\_64-cmake mingw-w64-x86\_64-boost mingw-w64-x86\_64-openssl mingw-w64-x86\_64-zeromq mingw-w64-x86\_64-libsodium**
 
-1. 使用**make release-static-win64**进行编译
+4.使用**make release-static-win64**进行编译,生成的可执行文件会再build/release文件夹中
 
 ## XMC GUI钱包的编译:
 
