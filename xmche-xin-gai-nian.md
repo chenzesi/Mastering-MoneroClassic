@@ -2,7 +2,7 @@
 
 #### XMC和XMR的地址（address）
 
-XMC和XMR的地址是95个字符的字符串，主网地址以“4”开头，测试了网络以“9”开头，例如:
+XMC和XMR的地址是95个字符的字符串，主网地址以“4”开头，测试了网络以“9”开头（XMC以后版本可能会修改开头字符，但是目前还是与XMR保持一致），例如:
 
 > `45RJpvvyb39CYpCnGi9cAviywdMmoJkrWe7QCq6aprMzU3qxijZy19LQttRkrsk7Z4hhtq5yZbZYkgTLRZbTSaraEJ53tVB`
 >
