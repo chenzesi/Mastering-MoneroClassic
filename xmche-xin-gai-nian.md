@@ -10,9 +10,11 @@ XMC和XMR的地址是95个字符的字符串，主网地址以“4”开头，�
 
 代码中src/cryptonote\_config.h中定义了CRYPTONOTE\_PUBLIC\_ADDRESS\_BASE58\_PREFIX和CRYPTONOTE\_PUBLIC\_INTEGRATED\_ADDRESS\_BASE58\_PREFIX两个常量值来表示主网"4"开头的前缀和测试网络"9"开头的前缀。
 
-> `uint64_t `**`const `**`CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX =18;`
+> uint64\_t **const **CRYPTONOTE\_PUBLIC\_ADDRESS\_BASE58\_PREFIX =18;
 >
-> `uint64_t `**`const `**`CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX =19;`
+> uint64\_t **const **CRYPTONOTE\_PUBLIC\_INTEGRATED\_ADDRESS\_BASE58\_PREFIX =19;
+>
+> uint64\_t **const **CRYPTONOTE\_PUBLIC\_SUBADDRESS\_BASE58\_PREFIX =42;
 
 
 
