@@ -16,5 +16,12 @@ XMC和XMR的地址是95个字符的字符串，主网地址以“4”开头，�
 >
 > uint64\_t **const **CRYPTONOTE\_PUBLIC\_SUBADDRESS\_BASE58\_PREFIX =42;
 
+  
 
+
+uint64\_t**const**CRYPTONOTE\_PUBLIC\_ADDRESS\_BASE58\_PREFIX =53;
+
+uint64\_t**const**CRYPTONOTE\_PUBLIC\_INTEGRATED\_ADDRESS\_BASE58\_PREFIX =54;
+
+uint64\_t**const**CRYPTONOTE\_PUBLIC\_SUBADDRESS\_BASE58\_PREFIX =63;
 
