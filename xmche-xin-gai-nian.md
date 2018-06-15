@@ -17,9 +17,7 @@ XMC和XMR地址由四部分组成，第一部分是前缀\(即主网的“4”�
 > `uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX =19;`
 >
 > `uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX =42;`
-
-
-
+>
 > `uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX =53;`
 >
 > `uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX =54;`
