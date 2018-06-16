@@ -18,17 +18,11 @@ XMC和XMR地址由四部分组成，第一部分是前缀\(即主网的“4”�
 >
 > `uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX =42;`
 
-如上代码所示，主网`CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX`被设置成常量18。此前缀首先经过Varint压缩算法
+如上代码所示，主网`CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX`被设置成常量18。此处使用了Varint压缩算法对前缀进行处理。Varint压缩算法是用一个或者多个字节来表示数字的方法，当表示的数字值比较小的数字占大多数时，能有效节省存储空间。Varint中的每个byte都有一个有特殊意义的最高有效位MSB（Most Signaficant Bit \)。
 
 
 
-> LLLLLLLLLLLLLLL
-
-> `uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX =53;`
->
-> `uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX =54;`
->
-> `uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX =63;`
+https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representationhttps://www.cnblogs.com/smark/archive/2012/05/03/2480034.html
 
 
 
