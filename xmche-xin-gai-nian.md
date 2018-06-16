@@ -22,6 +22,8 @@ XMC和XMR地址由四部分组成，第一部分是前缀\(即主网的“4”�
 
 
 
+
+
 [https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representation](https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representationhttps://www.cnblogs.com/smark/archive/2012/05/03/2480034.html)
 
 [https://www.cnblogs.com/smark/archive/2012/05/03/2480034.html](https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representationhttps://www.cnblogs.com/smark/archive/2012/05/03/2480034.html)
