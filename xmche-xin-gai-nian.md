@@ -18,7 +18,7 @@ XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。Bitcoin中的
 >
 >         `if(data.empty())`
 >
->                 `return std::string();`
+>             `return std::string();`
 >
 >         `size_t full_block_count = data.size() / full_block_size;`
 >
