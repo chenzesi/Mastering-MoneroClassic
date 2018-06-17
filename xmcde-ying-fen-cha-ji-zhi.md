@@ -79,25 +79,25 @@ src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t for
 >
 > `{`
 >
-> `CRITICAL_REGION_LOCAL(lock);`
+>         `CRITICAL_REGION_LOCAL(lock);`
 >
-> `// no hard forks setup yet`
+>         `// no hard forks setup yet`
 >
-> `if(heights.size() <=1)`
+>         `if(heights.size() <=1)`
 >
-> `returnReady;`
+>                 `return Ready;`
 >
-> `time_t t_last_fork = heights.back().time;`
+>         `time_t t_last_fork = heights.back().time;`
 >
-> `if(t >= t_last_fork + forked_time)`
+>         `if(t >= t_last_fork + forked_time)`
 >
-> `returnLikelyForked;`
+>                 `return LikelyForked;`
 >
-> `if(t >= t_last_fork + update_time)`
+>         `if(t >= t_last_fork + update_time)`
 >
-> `returnUpdateNeeded;`
+>                 `return UpdateNeeded;`
 >
-> `returnReady;`
+>         `return Ready;`
 >
 > `}`
 >
@@ -105,7 +105,7 @@ src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t for
 >
 > `{`
 >
-> `returnget_state(time(NULL));`
+>         `return get_state(time(NULL));`
 >
 > `}`
 
