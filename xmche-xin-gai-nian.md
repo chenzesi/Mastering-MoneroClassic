@@ -26,6 +26,8 @@ XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。Bitcoin中的
 
 [https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representation](https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representationhttps://www.cnblogs.com/smark/archive/2012/05/03/2480034.html)
 
+https://monero.stackexchange.com/questions/6049/why-monero-address-is-converted-to-base-58-in-blocks-instead-of-all-at-once/6052\#6052
+
 [https://www.cnblogs.com/smark/archive/2012/05/03/2480034.html](https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representationhttps://www.cnblogs.com/smark/archive/2012/05/03/2480034.html)
 
 [https://xmr.llcoins.net/addresstests.html](https://xmr.llcoins.net/addresstests.html)
