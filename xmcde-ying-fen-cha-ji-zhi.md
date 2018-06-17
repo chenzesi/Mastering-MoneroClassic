@@ -111,33 +111,22 @@ src/cryptonotebasic/hardfork.h中定义了两个时间的成员变量time\_t for
 
 HardFork类中的getcurrentversion function可以用来获取同步到的区块高度对应的分叉版本，此分叉版本的值等于block header中major version字段的值。在第七次分叉中主要是在挖矿算法中添加了variant, 挖矿算法的修改可以参考reference。为实现v6挖矿算法（variant等于0）到v7挖矿算法的平滑过渡（variant等于1），需要通过判断区块的版本来对应的使用挖矿算法。所以在src/cryptonotebasic/cryptonote\_format\_utils.cpp添加hardfork版本判断语句，确定对应的variant
 
-> `bool get_block_longhash(constblock& b,crypto::hash& res,uint64_t height)`
->
-> `{`
->
->         `// block 202612 bug workaround`
->
->         `const std::string longhash_202612 ="84f64766475d51837ac9efbef1926486e58563c95a19fef4aec3254f03000000";`
->
->         `if(height ==202612)`
->
->         `{`
->
->                 `string_tools::hex_to_pod(longhash_202612,res);`
->
->                 `return true;`
->
->         `}`
->
->         `blobdata bd = get_block_hashing_blob(b);`
->
->         `const int cn_variant = b.major_version >=7? b.major_version -6:0;`
->
->         `crypto::cn_slow_hash(bd.data(),bd.size(),res,cn_variant);`
->
+> ```cpp
+> bool get_block_longhash(constblock& b,crypto::hash& res,uint64_t height)
+> {
+>     `// block 202612 bug workaround`
+>     `const std::string longhash_202612 ="84f64766475d51837ac9efbef1926486e58563c95a19fef4aec3254f03000000";`
+>     `if(height ==202612)`
+>     `{`
+>         `string_tools::hex_to_pod(longhash_202612,res);`
 >         `return true;`
->
-> `}`
+>     `}`
+>     `blobdata bd = get_block_hashing_blob(b);`
+>     `const int cn_variant = b.major_version >=7? b.major_version -6:0;`
+>     `crypto::cn_slow_hash(bd.data(),bd.size(),res,cn_variant);`
+>     `return true;`
+> }
+> ```
 
 #### Reference:
 
