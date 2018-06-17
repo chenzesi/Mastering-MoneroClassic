@@ -20,13 +20,13 @@ XMC和XMR地址由四部分组成，第一部分是前缀\(即主网的“4”�
 
 如上代码所示，主网`CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX`被设置成uint64\_t类型常量18。此处使用了Varint压缩算法对前缀进行处理。Varint压缩算法是用一个或者多个字节来表示数字的方法，当表示的数字值比较小的数字占大多数时，能有效节省存储空间。Varint中的每个byte都有一个有特殊意义的最高有效位MSB（Most Signaficant Bit \)。当MSB被设置成1时表示后续的一个byte仍然是这个数字的一部分。除MSB外剩下的7bit以二进制补码的方式表示，每7bit可以看成一组，组之间是低位在前的顺序。在XMC和XMR中，前缀数值都比较小，经过处理后只是将前缀压缩到1byte表示。
 
-XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。Bitcoin中的Base58 encoding是将所有的data都转成Integer, 然后再去除以58，以转换成base58编码。这样处理的以一个问题是如果data比较大，转换成的Integer就会非常大，可能会需要BigInteger的特殊处理，并且会降低处理速度。
+XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。Bitcoin中的Base58 encoding是将所有的data都转成Integer, 然后再去除以58，以转换成base58编码。这样处理的以一个问题是如果data比较大，转换成的Integer就会非常大，可能会需要BigInteger的特殊处理，并且会降低处理速度。XMC和XMR中，是将data分成8 byte的block分别进行处理，这样就避免了转化成BigInteger的问题。
 
 参考资料:
 
 [https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representation](https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representationhttps://www.cnblogs.com/smark/archive/2012/05/03/2480034.html)
 
-https://monero.stackexchange.com/questions/6049/why-monero-address-is-converted-to-base-58-in-blocks-instead-of-all-at-once/6052\#6052
+[https://monero.stackexchange.com/questions/6049/why-monero-address-is-converted-to-base-58-in-blocks-instead-of-all-at-once/6052\#6052](https://monero.stackexchange.com/questions/6049/why-monero-address-is-converted-to-base-58-in-blocks-instead-of-all-at-once/6052#6052)
 
 [https://www.cnblogs.com/smark/archive/2012/05/03/2480034.html](https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representationhttps://www.cnblogs.com/smark/archive/2012/05/03/2480034.html)
 
