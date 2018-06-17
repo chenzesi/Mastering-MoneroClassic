@@ -13,13 +13,13 @@ hardfork.cpp中定义了struct mainnet\_hard\_forks和struct testnethardforks, \
 
 > **static const struct**{
 >
-> uint8\_t version;
+>     uint8\_t version;
 >
-> uint64\_t height;
+>     uint64\_t height;
 >
-> uint8\_t threshold;
+>     uint8\_t threshold;
 >
-> time\_t time;
+>     time\_t time;
 >
 > } mainnet\_hard\_forks\[\] = {
 >
