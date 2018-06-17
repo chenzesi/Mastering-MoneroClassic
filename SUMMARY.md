@@ -6,6 +6,6 @@
 * [XMC核心概念](xmche-xin-gai-nian.md)
 * [XMC的环签名](xmcde-huan-qian-ming.md)
 * [XMC的硬分叉机制](xmcde-ying-fen-cha-ji-zhi.md)
-* XMC多签机制
+* [XMC多签机制](xmcduo-qian-ji-zhi.md)
 * [XMC实现离线钱包](xmcshi-xian-li-xian-qian-bao.md)
 
