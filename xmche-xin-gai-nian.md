@@ -16,35 +16,35 @@ XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。Bitcoin中的
 >
 > `{`
 >
-> `if(data.empty())`
+>         `if(data.empty())`
 >
-> `return std::string();`
+>                 `return std::string();`
 >
-> `size_t full_block_count = data.size() / full_block_size;`
+>         `size_t full_block_count = data.size() / full_block_size;`
 >
-> `size_t last_block_size = data.size() % full_block_size;`
+>         `size_t last_block_size = data.size() % full_block_size;`
 >
-> `size_t res_size = full_block_count * full_encoded_block_size + encoded_block_sizes[last_block_size];`
+>         `size_t res_size = full_block_count * full_encoded_block_size + encoded_block_sizes[last_block_size];`
 >
-> `std::string res(res_size,alphabet[0]);`
+>         `std::string res(res_size,alphabet[0]);`
 >
-> `for(size_t i =0;i < full_block_count;++i)`
+>         `for(size_t i =0;i < full_block_count;++i)`
 >
-> `{`
+>         `{`
 >
-> `encode_block(data.data() + i * full_block_size,full_block_size,&res[i * full_encoded_block_size]);`
+>                 `encode_block(data.data() + i * full_block_size,full_block_size,&res[i * full_encoded_block_size]);`
 >
-> `}`
+>         `}`
 >
-> `if(0< last_block_size)`
+>         `if(0< last_block_size)`
 >
-> `{`
+>         `{`
 >
-> `encode_block(data.data() + full_block_count * full_block_size,last_block_size,&res[full_block_count * full_encoded_block_size]);`
+>                 `encode_block(data.data() + full_block_count * full_block_size,last_block_size,&res[full_block_count * full_encoded_block_size]);`
 >
-> `}`
+>         `}`
 >
-> `return res;`
+>         `return res;`
 >
 > `}`
 
@@ -57,6 +57,8 @@ XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。Bitcoin中的
 > `uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX =42;`
 
 如上代码所示，主网`CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX`被设置成uint64\_t类型常量18。此处使用了Varint压缩算法对前缀进行处理。Varint压缩算法是用一个或者多个字节来表示数字的方法，当表示的数字值比较小的数字占大多数时，能有效节省存储空间。Varint中的每个byte都有一个有特殊意义的最高有效位MSB（Most Signaficant Bit \)。当MSB被设置成1时表示后续的一个byte仍然是这个数字的一部分。除MSB外剩下的7bit以二进制补码的方式表示，每7bit可以看成一组，组之间是低位在前的顺序。在XMC和XMR中，前缀数值都比较小，经过处理后只是将前缀压缩到1byte表示。
+
+
 
 参考资料:
 
