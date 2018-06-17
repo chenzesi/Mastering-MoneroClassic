@@ -11,7 +11,7 @@
 
 hardfork.cpp中定义了struct mainnet\_hard\_forks和struct testnethardforks, \_struct中包含uint8\_t version，uint64\_t height，uint8\_t threshold，time\_t time和mainnet\_hard\_fork\_version\_1\_till，testnet\_hard\_fork\_version\_1\_till
 
-> ```
+> ```cpp
 > static const struct{
 >     uint8\_t version;
 >     uint64\_t height;
