@@ -45,11 +45,11 @@ XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。Bitcoin中的
 
 #### Integrated address和Payment ID
 
-Payment ID是8 byte长度的交易额外信息，Payment ID被嵌入进XMC和XMR地址中，生成的地址即所谓的Integrated address，Integrated address的生成与普通address类似，只是在原有1 byte PREFIX+ 32 byte Public Spend Key+ 32 byte Public View key 基础上再加上8 byte Payment ID，即最后的地址为1 byte PREFIX+ 32 byte Public Spend Key+ 32 byte Public View key + 8 byte Payment ID + 4 byte  checksum = 77 byte
+Payment ID是8 byte长度的交易额外信息，Payment ID被嵌入进XMC和XMR地址中，生成的地址即所谓的Integrated address，Integrated address的生成与普通address类似，只是在原有1 byte PREFIX+ 32 byte Public Spend Key+ 32 byte Public View key 基础上再加上8 byte Payment ID，即最后的地址为1 byte PREFIX+ 32 byte Public Spend Key+ 32 byte Public View key + 8 byte Payment ID + 4 byte  checksum = 77 byte，然后转成base58字符串。
 
 #### Stealth Address
 
-####  
+#### 
 
 参考资料:
 
