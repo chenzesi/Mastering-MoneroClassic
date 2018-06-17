@@ -8,7 +8,7 @@ XMC和XMR的地址是95个字符的字符串（base58编码），主网地址以
 >
 > `9tAbBhspbCCSB9CRSDaTybaDxBGT1aomYcYkViAVq2HEUM5iVEB1u3PDPCvJCBwXqMTmK6TdZsqgNUqnnPULtAHGPADzXn7`
 
-XMC和XMR地址由四部分组成，第一部分是前缀\(即主网的“4”和测试网络的“9”，大小为1byte\)，第二部分是Public Spend Key \(32 byte\), 第三部分是Public View Key \(32 byte\), 第四部分是Keccac-256 对地址的校验码。
+XMC和XMR地址由四部分组成，第一部分是前缀\(即主网的“4”和测试网络的“9”，大小为1byte\)，第二部分是Public Spend Key \(32 byte\), 第三部分是Public View Key \(32 byte\), 第四部分是用Keccac-256 对地址\( 1 byte 前缀+ 32 byte Public Spend Key+ 32 byte Public View Key\)的Hash后，Hash值的前4 byte值。最后此69 byte经过base58后，得到95个字符的地址字符串。
 
 代码中src/cryptonote\_config.h中定义了mainet的CRYPTONOTE\_PUBLIC\_ADDRESS\_BASE58\_PREFIX和testnet的CRYPTONOTE\_PUBLIC\_ADDRESS\_BASE58\_PREFIX两个常量值来表示主网"4"开头的前缀和测试网络"9"开头的前缀。
 
