@@ -28,3 +28,5 @@ XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。
 
 [https://www.cnblogs.com/smark/archive/2012/05/03/2480034.html](https://stackoverflow.com/questions/24614553/why-is-varint-an-efficient-data-representationhttps://www.cnblogs.com/smark/archive/2012/05/03/2480034.html)
 
+https://xmr.llcoins.net/addresstests.html
+
