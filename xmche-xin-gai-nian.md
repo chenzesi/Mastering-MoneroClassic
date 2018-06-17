@@ -17,7 +17,6 @@ XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。Bitcoin中的
 > {
 >     `if(data.empty())`
 >         `return std::string();`
->
 >     `size_t full_block_count = data.size() / full_block_size;`
 >     `size_t last_block_size = data.size() % full_block_size;`
 >     `size_t res_size = full_block_count * full_encoded_block_size + encoded_block_sizes[last_block_size];`
@@ -25,7 +24,6 @@ XMC和XMR中使用的Base58算法实现也与Bitcoin有所不同。Bitcoin中的
 >     `for(size_t i =0;i < full_block_count;++i)`
 >     `{`
 >         `encode_block(data.data() + i * full_block_size,full_block_size,&res[i * full_encoded_block_size]);`
->
 >     `}`
 >     `if(0< last_block_size)`
 >     `{`
