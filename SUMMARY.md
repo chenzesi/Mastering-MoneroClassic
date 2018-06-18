@@ -7,6 +7,6 @@
 * [XMC的环签名](xmcde-huan-qian-ming.md)
 * [XMC的硬分叉机制](xmcde-ying-fen-cha-ji-zhi.md)
 * [XMC多签机制](xmcduo-qian-ji-zhi.md)
-* XMC的区块存储
+* [XMC的区块存储](xmcde-qu-kuai-cun-chu.md)
 * [XMC实现离线钱包](xmcshi-xian-li-xian-qian-bao.md)
 
