@@ -6,9 +6,5 @@
 
 1.使用**./moneroclassic-wallet-cli --testnet **命令打开钱包
 
-2.A,B,C三个人分别使用prepare\_multisig命令产生multisig info
-
-
-
-
+2.A, B, C三个人分别使用**prepare\_multisig**命令产生multisig info
 
