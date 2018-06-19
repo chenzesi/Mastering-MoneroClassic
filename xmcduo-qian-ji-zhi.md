@@ -44,5 +44,21 @@ walletC:
 >
 > This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants
 
-3.
+3.A,B,C分别使用**make\_multisig 2 &lt;multisig-info&gt; &lt;multisig-info&gt;**命令生成multisig钱包，其中2表示有两个签名即可生效，multisig-info是另外两个人的multisig-info。举例来说，用户A应使用用户B和C提供的mutlisig-info
+
+walletA:
+
+> `[wallet 9uKdar]: make_multisig 2 MultisigV1gYCUZQLBQwPhSDuJFDqwF3fzVG3kuF6aPBLFhm1RYn2bMECwHPfjHSn2R4m5GKn1Be5BmrDadHCp5GVNVhgKzNHkj4tkRARsyJm9oYVcKJ71RDDcExFR817SAi8RibPjwfXQj2ee418RqNgNM4eQycmcxLQ6QQ3UGKnwyLAnCcrDS9nn MultisigV1c8XMWmfQYsKdPjNDgzVRYjPcVh7YJonYoXAiyGcmMCqUekyHCvhSNGGhXdwaaTPZXHDkVa99Vh6beUfaRtG4V75sM8HF8avvRWxSpsdKtjHmQTY1YM9GxQYWFRcfuqgP4nsbNToMPmhiqV14htkRAMUoKT7Qrb2LotUbnLBbtCxyhGRN`
+>
+> `Wallet password:`
+>
+> `Another step is needed`
+>
+> `MultisigxV1fSkNJQi4XwWhZhQ1zqh6o5AYveN9G9i1BATZsT969qC2hz15Yg6DRjHZCv6YGwpSqqUFnEpXQeEFaNEzc5RcMpiY3ntw4s7k5RxPMYeQ7EyDPXhSZ7qfgaVWGZTv7pXqTj7F2FhZVRiKFsv6QBLKJ6yf7kTNm7ESG3NjgSPjgdiyqETrgzKeFmV7NaAJ2yNB2WtTWzUUbqMtHg7d8R2u4FxvTMR4`
+>
+> `Send this multisig info to all other participants, then use finalize_multisig <info1> [<info2>...] with others' multisig info`
+
+walletB:
+
+
 
