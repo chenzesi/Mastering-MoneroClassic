@@ -6,7 +6,7 @@
 
 1.使用**./moneroclassic-wallet-cli --testnet **命令打开钱包
 
-2.
+2.使用prepare\_multisig命令产生multisig info
 
 > `[wallet 9zSb65]: prepare_multisig`
 >
