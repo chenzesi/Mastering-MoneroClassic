@@ -6,43 +6,43 @@
 
 1.A,B,C三个人分别使用**./moneroclassic-wallet-cli --testnet **命令打开钱包walletA, walletB, walletC
 
-2.A, B, C三个人分别使用**prepare\_multisig**命令产生multisig info
+2.A, B, C三个人分别使用**prepare\_multisig**命令产生walletA, walletB和walletC的multisig info
 
-A:
+walletA:
 
-> `[wallet 9ydm81]: prepare_multisig`
+> \[wallet 9uKdar\]: prepare\_multisig
 >
-> `Wallet password:`
+> Wallet password:
 >
-> `MultisigV15Ayhc5PkhRzet4U7JkFxoaJBiRJxejQhoWsakmsh8Gevhoo8EvhEKu226tsj5cNbvmUJG5wA9AV4rAXAkb1bFj7e6FVPzi6caEoDLMYo472Lg7gRBqnrCwvXjGmErtJniBa7DVZ21JhJAFjbK2X8GqvQW59N7YHcbNNFJSLzT9bxp6rp`
+> MultisigV1MLhQU3JTFkkMmcoG1ALeFHJv2oB8XiQAi2Lu48qH7vno1hVStECZUot9NyvbnvCNdM24hz6mwciPSZv91RtjLaopWJHB5J17aWDinWvBXKsyV741GLB7Puy4zZDM3VVpmP88LT38At6vc3XBCcVxu72ZTuexRab2w381s5vgx8Kh6gtq
 >
-> `Send this multisig info to all other participants, then use make_multisig <threshold> <info1> [<info2>...] with others' multisig info`
+> Send this multisig info to all other participants, then use make\_multisig &lt;threshold&gt; &lt;info1&gt; \[&lt;info2&gt;...\] with others' multisig info
 >
-> `This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants`
+> This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants
 
-B:
+walletB:
 
-> `[wallet 9ydm81]: prepare_multisig`
+> \[wallet 9wbQhC\]: prepare\_multisig
 >
-> `Wallet password:`
+> Wallet password:
 >
-> `MultisigV15Ayhc5PkhRzet4U7JkFxoaJBiRJxejQhoWsakmsh8Gevhoo8EvhEKu226tsj5cNbvmUJG5wA9AV4rAXAkb1bFj7ebf9ytkH16pg65bEumtCKifJnTFbBALEEEPQNYwtgMp5JiHMdyUnP6p9HgVVWd5gJAhPEBs6kmqMZHYh6dQ8Snvg6`
+> MultisigV1gYCUZQLBQwPhSDuJFDqwF3fzVG3kuF6aPBLFhm1RYn2bMECwHPfjHSn2R4m5GKn1Be5BmrDadHCp5GVNVhgKzNHkj4tkRARsyJm9oYVcKJ71RDDcExFR817SAi8RibPjwfXQj2ee418RqNgNM4eQycmcxLQ6QQ3UGKnwyLAnCcrDS9nn
 >
-> `Send this multisig info to all other participants, then use make_multisig <threshold> <info1> [<info2>...] with others' multisig info`
+> Send this multisig info to all other participants, then use make\_multisig &lt;threshold&gt; &lt;info1&gt; \[&lt;info2&gt;...\] with others' multisig info
 >
-> `This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants`
+> This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants
 
-C:
+walletC:
 
-> `[wallet 9ydm81]: prepare_multisig`
+> \[wallet A2q9oZ\]: prepare\_multisig
 >
-> `Wallet password:`
+> Wallet password:
 >
-> `MultisigV15Ayhc5PkhRzet4U7JkFxoaJBiRJxejQhoWsakmsh8Gevhoo8EvhEKu226tsj5cNbvmUJG5wA9AV4rAXAkb1bFj7eRXmRLgbUybjbn1RKn5drSbY3wwkWU2SKii79yyKmMmpHJeniVpfRKWoGmY6PPqv4tq5VA9ZVNvmBdJe9bfakHyba`
+> MultisigV1c8XMWmfQYsKdPjNDgzVRYjPcVh7YJonYoXAiyGcmMCqUekyHCvhSNGGhXdwaaTPZXHDkVa99Vh6beUfaRtG4V75sM8HF8avvRWxSpsdKtjHmQTY1YM9GxQYWFRcfuqgP4nsbNToMPmhiqV14htkRAMUoKT7Qrb2LotUbnLBbtCxyhGRN
 >
-> `Send this multisig info to all other participants, then use make_multisig <threshold> <info1> [<info2>...] with others' multisig info`
+> Send this multisig info to all other participants, then use make\_multisig &lt;threshold&gt; &lt;info1&gt; \[&lt;info2&gt;...\] with others' multisig info
 >
-> `This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants`
+> This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants
 
 3.
 
