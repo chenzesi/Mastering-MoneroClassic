@@ -8,5 +8,15 @@
 
 2.
 
+> `[wallet 9zSb65]: prepare_multisig`
+>
+> `Wallet password:`
+>
+> `MultisigV115Meo3UCxuqfMrt5aUy8Sj18512fHuRn64jH8nT23sMYTv1n6bVNnMqHVmVdPGhdYX3UckDdb8spR9azMBtx3WqBbTgvAe1DU6L4idbCpVGPSvCpxH4pScP3n9WLhzZtCWSb32zexg41ayeQXgFkZnBPy7cvb7ipSXNUNeJMG9utJjFb`
+>
+> `Send this multisig info to all other participants, then use make_multisig <threshold><info1> [<info2>...] with others' multisig info`
+>
+> `This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants`
+
 
 
