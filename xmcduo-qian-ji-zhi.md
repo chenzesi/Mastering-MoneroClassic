@@ -44,21 +44,43 @@ walletC:
 >
 > This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants
 
-3.A,B,C分别使用**make\_multisig 2 &lt;multisig-info&gt; &lt;multisig-info&gt;**命令生成multisig钱包，其中2表示有两个签名即可生效，multisig-info是另外两个人的multisig-info。举例来说，用户A应使用用户B和C提供的mutlisig-info
+3.A,B,C分别使用**make\_multisig 2 &lt;multisig-info&gt; &lt;multisig-info&gt;**命令生成multisig钱包，其中2表示有两个签名即可生效，multisig-info是另外两个人的上一步骤中产生的multisig-info。举例来说，用户A应使用用户B和C提供的mutlisig-info
 
 walletA:
 
-> `[wallet 9uKdar]: make_multisig 2 MultisigV1gYCUZQLBQwPhSDuJFDqwF3fzVG3kuF6aPBLFhm1RYn2bMECwHPfjHSn2R4m5GKn1Be5BmrDadHCp5GVNVhgKzNHkj4tkRARsyJm9oYVcKJ71RDDcExFR817SAi8RibPjwfXQj2ee418RqNgNM4eQycmcxLQ6QQ3UGKnwyLAnCcrDS9nn MultisigV1c8XMWmfQYsKdPjNDgzVRYjPcVh7YJonYoXAiyGcmMCqUekyHCvhSNGGhXdwaaTPZXHDkVa99Vh6beUfaRtG4V75sM8HF8avvRWxSpsdKtjHmQTY1YM9GxQYWFRcfuqgP4nsbNToMPmhiqV14htkRAMUoKT7Qrb2LotUbnLBbtCxyhGRN`
+> \[wallet 9uKdar\]: make\_multisig 2 MultisigV1gYCUZQLBQwPhSDuJFDqwF3fzVG3kuF6aPBLFhm1RYn2bMECwHPfjHSn2R4m5GKn1Be5BmrDadHCp5GVNVhgKzNHkj4tkRARsyJm9oYVcKJ71RDDcExFR817SAi8RibPjwfXQj2ee418RqNgNM4eQycmcxLQ6QQ3UGKnwyLAnCcrDS9nn MultisigV1c8XMWmfQYsKdPjNDgzVRYjPcVh7YJonYoXAiyGcmMCqUekyHCvhSNGGhXdwaaTPZXHDkVa99Vh6beUfaRtG4V75sM8HF8avvRWxSpsdKtjHmQTY1YM9GxQYWFRcfuqgP4nsbNToMPmhiqV14htkRAMUoKT7Qrb2LotUbnLBbtCxyhGRN
 >
-> `Wallet password:`
+> Wallet password:
 >
-> `Another step is needed`
+> Another step is needed
 >
-> `MultisigxV1fSkNJQi4XwWhZhQ1zqh6o5AYveN9G9i1BATZsT969qC2hz15Yg6DRjHZCv6YGwpSqqUFnEpXQeEFaNEzc5RcMpiY3ntw4s7k5RxPMYeQ7EyDPXhSZ7qfgaVWGZTv7pXqTj7F2FhZVRiKFsv6QBLKJ6yf7kTNm7ESG3NjgSPjgdiyqETrgzKeFmV7NaAJ2yNB2WtTWzUUbqMtHg7d8R2u4FxvTMR4`
+> MultisigxV1fSkNJQi4XwWhZhQ1zqh6o5AYveN9G9i1BATZsT969qC2hz15Yg6DRjHZCv6YGwpSqqUFnEpXQeEFaNEzc5RcMpiY3ntw4s7k5RxPMYeQ7EyDPXhSZ7qfgaVWGZTv7pXqTj7F2FhZVRiKFsv6QBLKJ6yf7kTNm7ESG3NjgSPjgdiyqETrgzKeFmV7NaAJ2yNB2WtTWzUUbqMtHg7d8R2u4FxvTMR4
 >
-> `Send this multisig info to all other participants, then use finalize_multisig <info1> [<info2>...] with others' multisig info`
+> Send this multisig info to all other participants, then use finalize\_multisig &lt;info1&gt; \[&lt;info2&gt;...\] with others' multisig info
 
 walletB:
+
+> \[wallet 9wbQhC\]: make\_multisig 2 MultisigV1MLhQU3JTFkkMmcoG1ALeFHJv2oB8XiQAi2Lu48qH7vno1hVStECZUot9NyvbnvCNdM24hz6mwciPSZv91RtjLaopWJHB5J17aWDinWvBXKsyV741GLB7Puy4zZDM3VVpmP88LT38At6vc3XBCcVxu72ZTuexRab2w381s5vgx8Kh6gtq MultisigV1c8XMWmfQYsKdPjNDgzVRYjPcVh7YJonYoXAiyGcmMCqUekyHCvhSNGGhXdwaaTPZXHDkVa99Vh6beUfaRtG4V75sM8HF8avvRWxSpsdKtjHmQTY1YM9GxQYWFRcfuqgP4nsbNToMPmhiqV14htkRAMUoKT7Qrb2LotUbnLBbtCxyhGRN
+>
+> Wallet password:
+>
+> Another step is needed
+>
+> MultisigxV18VBMJangwAY19jSU25hzazSFEcpaJgANKMkbsPUgxP3qhz15Yg6DRjHZCv6YGwpSqqUFnEpXQeEFaNEzc5RcMpiYAFgFgRrGFfB4cPpc3WrYM1D6Vk2Pxm2QzHz5VMRPaNp9ATGefPUwpiWJYiHg2EThkMcyuPqL3FVxRM4TEeq94nuuL7MADuFZ1dd9aUKvZq2xRTNxV43Z7nfhaZf9J3CXZXK4
+>
+> Send this multisig info to all other participants, then use finalize\_multisig &lt;info1&gt; \[&lt;info2&gt;...\] with others' multisig info
+
+walletC:
+
+> \[wallet A2q9oZ\]: make\_multisig 2 MultisigV1MLhQU3JTFkkMmcoG1ALeFHJv2oB8XiQAi2Lu48qH7vno1hVStECZUot9NyvbnvCNdM24hz6mwciPSZv91RtjLaopWJHB5J17aWDinWvBXKsyV741GLB7Puy4zZDM3VVpmP88LT38At6vc3XBCcVxu72ZTuexRab2w381s5vgx8Kh6gtq MultisigV1gYCUZQLBQwPhSDuJFDqwF3fzVG3kuF6aPBLFhm1RYn2bMECwHPfjHSn2R4m5GKn1Be5BmrDadHCp5GVNVhgKzNHkj4tkRARsyJm9oYVcKJ71RDDcExFR817SAi8RibPjwfXQj2ee418RqNgNM4eQycmcxLQ6QQ3UGKnwyLAnCcrDS9nn
+>
+> Wallet password:
+>
+> Another step is needed
+>
+> MultisigxV13KscmPnoGs9ZD5aYYLdan3QapbhEwNgrsbpneaPFbkJ23ntw4s7k5RxPMYeQ7EyDPXhSZ7qfgaVWGZTv7pXqTj7FAFgFgRrGFfB4cPpc3WrYM1D6Vk2Pxm2QzHz5VMRPaNp9TaN1MyegJt2Qk2BNtrhdbwPgBvRCKYeDYSe9H2U8sJnQ192t8xumERuQFvrGbbGEWp4TDkGSD1sRqWpn3TMf8REw
+>
+> Send this multisig info to all other participants, then use finalize\_multisig &lt;info1&gt; \[&lt;info2&gt;...\] with others' multisig info
 
 
 
