@@ -82,5 +82,9 @@ walletC:
 >
 > Send this multisig info to all other participants, then use finalize\_multisig &lt;info1&gt; \[&lt;info2&gt;...\] with others' multisig info
 
-4.A,B,C分别使用**finalize\_multisig &lt;multisig-info&gt; &lt;multisig-info&gt;**命令
+4.A,B,C分别使用**finalize\_multisig &lt;multisig-info&gt; &lt;multisig-info&gt;**命令Finalize Multisig, 其中multisig-info是上一步骤中，另外两个人产生的multisig-info。例如用户A应使用B和C在上一步中产生的multisig-info。
+
+walletA:
+
+
 
