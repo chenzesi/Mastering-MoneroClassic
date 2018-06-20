@@ -118,7 +118,7 @@ walletC:
 
 经过上述步骤后，产生的多签地址即可用来正常接收XMC
 
-下面是从多签地址转出币的步骤：
+#### 下面是从多签地址转出币的步骤：
 
 1.因为上述钱包只要有两个人签名即可转出，我们假设使用钱包A和钱包B，使用**export\_multisig\_info filename**命令（filename可以是任何名字）导出multisig info
 
@@ -138,15 +138,7 @@ walletB:
 >
 > Multisig info exported to infoB
 
-walletC:
-
-> \[wallet 9zwR2b\]: export\_multisig\_info infoC
->
-> Wallet password:
->
-> Multisig info exported to infoC
-
-2.假设使用walletA来操作转账流程，B和C将上一步中产生的infoB和infoC发给A，A使用** import\_multisig\_info infoB infoC**命令导入multisig info
+2.假设使用walletA，walletB来操作转账流程，将infoA发个B，将infoB发给A，A使用** import\_multisig\_info infoB **命令导入multisig info，B使用**import\_multisig\_info infoA **命令导入multisig info
 
 3.A使用**transfer**命令发起转账交易
 
