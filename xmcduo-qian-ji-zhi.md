@@ -168,7 +168,7 @@ walletA:
 >
 > Unsigned transaction\(s\) successfully written to file: multisig\_monero\_tx
 
-4.A将上一步产生的multisig\_monero_\__tx文件发给B签名，在walletB中使用**sign\_multisig multisig\_monero\_tx**命令
+4.A将上一步产生的multisig\_monero\_tx文件发给B签名，在walletB中使用**sign\_multisig multisig\_monero\_tx**命令
 
 walletB:
 
