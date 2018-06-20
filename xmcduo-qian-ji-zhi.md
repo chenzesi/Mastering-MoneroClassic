@@ -116,5 +116,37 @@ walletC:
 >
 > 0  9zwR2bm7xasETDL7ed5PXjUP1T5zBzSzhKVSrcjb8oxNNxbTEnwNNHodAo3WiHZWDNBdgQxJaYbhTMhrfVs7a5QbDPzCbQE  Primary address
 
-6.
+经过上述步骤后，产生的多签地址即可用来正常接收XMC
+
+下面是从多签地址转出币的步骤：
+
+1.因为上述钱包只要有两个人签名即可转出，我们假设使用钱包A和钱包B，使用**export\_multisig\_info filename**命令（filename可以是任何名字）导出multisig info
+
+walletA:
+
+> \[wallet 9zwR2b\]: export\_multisig\_info infoA
+>
+> Wallet password:
+>
+> Multisig info exported to infoA
+
+walletB:
+
+> \[wallet 9zwR2b\]: export\_multisig\_info infoB
+>
+> Wallet password:
+>
+> Multisig info exported to infoB
+
+walletC:
+
+> \[wallet 9zwR2b\]: export\_multisig\_info infoC
+>
+> Wallet password:
+>
+> Multisig info exported to infoC
+
+2.在walletB使用import 
+
+
 
