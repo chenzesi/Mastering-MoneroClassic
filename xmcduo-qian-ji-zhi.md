@@ -146,7 +146,55 @@ walletC:
 >
 > Multisig info exported to infoC
 
-2.在walletB使用import 
+2.假设使用walletA来操作转账流程，B和C将上一步中产生的infoB和infoC发给A，A使用** import\_multisig\_info infoB infoC**命令导入multisig info
+
+3.A使用**transfer**命令发起转账交易
+
+walletA:
+
+> \[wallet 9zwR2b\]: transfer 9tCVYpdfe461LV2gya6A1u7cUQjchvcomX1qdqdRSJRb7qiNfF9nrKHein74mUasusfboTJ5Z2qhYCsZhmMNmqKyEdfqbsu 100
+>
+> Wallet password:
+>
+> No payment id is included with this transaction. Is this okay?  \(Y/Yes/N/No\): Y
+>
+> Transaction 1/1:
+>
+> Spending from address index 0
+>
+> Sending 100.000000000000.  The transaction fee is 0.005848290000
+>
+> Is this okay?  \(Y/Yes/N/No\): Y
+>
+> Unsigned transaction\(s\) successfully written to file: multisig\_monero\_tx
+
+4.A将上一步产生的multisig\_monero_\__tx文件发给B签名，在walletB中使用**sign\_multisig multisig\_monero\_tx**命令
+
+walletB:
+
+> \[wallet 9zwR2b\]: sign\_multisig multisig\_monero\_tx
+>
+> Wallet password:
+>
+> Loaded 1 transactions, for 102.356449303959, fee 0.005848290000, sending 100.000000000000 to 9tCVYpdfe461LV2gya6A1u7cUQjchvcomX1qdqdRSJRb7qiNfF9nrKHein74mUasusfboTJ5Z2qhYCsZhmMNmqKyEdfqbsu, 2.350601013959 change to 9zwR2bm7xasETDL7ed5PXjUP1T5zBzSzhKVSrcjb8oxNNxbTEnwNNHodAo3WiHZWDNBdgQxJaYbhTMhrfVs7a5QbDPzCbQE, with min ring size 7, no payment ID. Is this okay? \(Y/Yes/N/No\): Y
+>
+> Transaction successfully signed to file multisig\_monero\_tx, txid bc8129bc784fc9c9531af2310fbaf78c9bc741c96bd08dcb219849b0212d7677
+>
+> It may be relayed to the network with submit\_multisig
+
+5.B在上一步签名后得到multisig\_monero\_tx文件后，即可使用**submit\_multisig multisig\_monero\_tx**命令提交transaction
+
+walletB:
+
+> \[wallet 9zwR2b \(out of sync\)\]: submit\_multisig multisig\_monero\_tx
+>
+> Wallet password:
+>
+> Loaded 1 transactions, for 102.356449303959, fee 0.005848290000, sending 100.000000000000 to 9tCVYpdfe461LV2gya6A1u7cUQjchvcomX1qdqdRSJRb7qiNfF9nrKHein74mUasusfboTJ5Z2qhYCsZhmMNmqKyEdfqbsu, 2.350601013959 change to 9zwR2bm7xasETDL7ed5PXjUP1T5zBzSzhKVSrcjb8oxNNxbTEnwNNHodAo3WiHZWDNBdgQxJaYbhTMhrfVs7a5QbDPzCbQE, with min ring size 7, no payment ID. Is this okay? \(Y/Yes/N/No\): Y
+>
+> Transaction successfully submitted, transaction &lt;bc8129bc784fc9c9531af2310fbaf78c9bc741c96bd08dcb219849b0212d7677&gt;
+>
+> You can check its status by using the \`show\_transfers\` command.
 
 
 
