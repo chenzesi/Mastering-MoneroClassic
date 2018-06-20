@@ -188,5 +188,7 @@ walletB:
 >
 > You can check its status by using the \`show\_transfers\` command.
 
+### 多签钱包的原理与实现
+
 
 
